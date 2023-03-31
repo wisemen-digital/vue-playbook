@@ -1,31 +1,32 @@
 import { defineConfig } from 'vitepress'
 import { SearchPlugin } from "vitepress-plugin-search";
 
-var options = {
-  previewLength: 62,
-  buttonLabel: "Search",
-  placeholder: "Search docs",
-};
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "The Frontend Bible",
   vite: {
     plugins: [
-      SearchPlugin(options)
+      SearchPlugin()
     ]
   },
+  cleanUrls: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
     ],
+    logo: '/logo.png',
     sidebar: [
       { text: 'Components', link: '/components', items: [
+          { text: 'Naming', link: '/components/components-naming' },
+          { text: 'Structure', link: '/components/components-structure' },
+          { text: 'Smart vs Dumb', link: '/components/components-smart-dumb' },
           { text: 'Props', link: '/components/components-props' },
           { text: 'Emits', link: '/components/components-emits' },
           { text: 'Slots', link: '/components/components-slots' },
+          { text: 'Testing', link: '/components/components-testing' },
+          { text: 'Accessibility', link: '/components/components-accessibility' },
         ]
       },
       {
