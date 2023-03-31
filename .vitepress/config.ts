@@ -21,7 +21,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
     ],
-
     sidebar: [
       { text: 'Components', link: '/components', items: [
           { text: 'Props', link: '/components/components-props' },
@@ -47,9 +46,8 @@ export default defineConfig({
       { text: 'Teamwork', link: '/teamwork'},
       { text: 'Tools', link: '/tools'},
     ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/appwise-labs/frontend-bible' }
     ]
   }
 })

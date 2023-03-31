@@ -3,7 +3,8 @@ Design patterns are solutions to common problems in software design. Each patter
 
 ## Builder pattern
 Builder is a creational design pattern, which allows constructing complex objects step by step.
-```
+
+```typescript
 class StringBuilder {
   result = '';
 
