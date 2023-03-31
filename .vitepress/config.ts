@@ -9,23 +9,20 @@ var options = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "WisemenFrontendBible",
-  description: "A VitePress Site",
+  title: "The Frontend Bible",
+  vite: {
+    plugins: [
+      SearchPlugin(options)
+    ]
+  },
+  description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
     ],
 
     sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
       { text: 'Components', link: '/components', items: [
           { text: 'Props', link: '/components/components-props' },
           { text: 'Emits', link: '/components/components-emits' },

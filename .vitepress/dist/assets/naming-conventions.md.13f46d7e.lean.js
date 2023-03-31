@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,N as o}from"./chunks/framework.0799945b.js";const u=JSON.parse('{"title":"Naming conventions","description":"","frontmatter":{},"headers":[],"relativePath":"naming-conventions.md"}'),d={name:"naming-conventions.md"},n=o("",16),r=[n];function s(i,l,c,m,h,g){return a(),e("div",null,r)}const b=t(d,[["render",s]]);export{u as __pageData,b as default};
