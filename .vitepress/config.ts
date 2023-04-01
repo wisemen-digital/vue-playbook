@@ -32,6 +32,7 @@ export default defineConfig({
       { text: 'Naming conventions', link: '/naming-conventions'},
       { text: 'ESLint config', link: '/eslint-config'},
       { text: 'Teamwork', link: '/teamwork'},
+      { text: 'Libraries', link: '/libraries'},
       { text: 'Components', link: '/components', items: [
           { text: 'Naming', link: '/components/naming' },
           { text: 'Structure', link: '/components/structure' },
@@ -50,7 +51,6 @@ export default defineConfig({
           { text: 'Router', link: '/reusable-code/router' },
           { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
-      { text: 'Libraries', link: '/libraries'},
       { text: 'Testing', link: '/testing', items: [
         { text: 'Unit testing', link: '/testing/unit-testing' },
         { text: 'E2E testing', link: '/testing/e2e-testing' },

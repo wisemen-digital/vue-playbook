@@ -36,12 +36,15 @@ const emit = defineEmits<{
 }>();
 ```
 
-## Handling emits in the parents
+## Handling emits in the parent
 
-When handling emits in the parent, you should always use the `on` or 'handle' prefix. This will make it clear that you are handling an emit.
+When handling emits in the parent, you should always use the `on` or `handle` prefix.
+
+This will make it clear that you are handling an emit.
 
 ```vue
 <template>
-  <ExampleComponent @component:change="handleChange" />
+  <FormSelect @component:change="handleSelectChange" />
+  <EmployeeTable @row:click="onEmployeeClick" />
 </template>
 ```
