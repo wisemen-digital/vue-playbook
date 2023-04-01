@@ -9,41 +9,46 @@ export default defineConfig({
       SearchPlugin()
     ]
   },
+  srcDir: './src',
   cleanUrls: true,
+  lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
     ],
+    editLink: {
+      pattern: 'https://github.com/appwise-labs/frontend-bible/src/:path'
+    },
     logo: '/logo.png',
     sidebar: [
       { text: 'Components', link: '/components', items: [
-          { text: 'Naming', link: '/components/components-naming' },
-          { text: 'Structure', link: '/components/components-structure' },
-          { text: 'Smart vs Dumb', link: '/components/components-smart-dumb' },
-          { text: 'Props', link: '/components/components-props' },
-          { text: 'Emits', link: '/components/components-emits' },
-          { text: 'Slots', link: '/components/components-slots' },
-          { text: 'Testing', link: '/components/components-testing' },
-          { text: 'Accessibility', link: '/components/components-accessibility' },
+          { text: 'Naming', link: '/components/naming' },
+          { text: 'Structure', link: '/components/structure' },
+          { text: 'Smart vs Dumb', link: '/components/smart-dumb' },
+          { text: 'Props', link: '/components/props' },
+          { text: 'Emits', link: '/components/emits' },
+          { text: 'Slots', link: '/components/slots' },
+          { text: 'Testing', link: '/components/testing' },
+          { text: 'Accessibility', link: '/components/accessibility' },
         ]
       },
       {
         text: 'Design patterns', link: '/design-patterns', items: [
           {
             text: 'Solid',
-            link: '/design-patterns/design-patterns-solid',
+            link: '/design-patterns/solid',
           }
         ],
       },
-      { text: 'Reusable code', link: 'reusable-code', items: [
-          { text: 'Composables', link: '/reusable-code/reusable-composables' },
-          { text: 'Utils', link: '/reusable-code/reusable-utils' },
-          { text: 'Stores', link: '/reusable-code/reusable-stores' },
-          { text: 'Services', link: '/reusable-code/reusable-services' },
-          { text: 'Router', link: '/reusable-code/reusable-router' },
-          { text: 'Authentication', link: '/reusable-code/reusable-authentication' },
+      { text: 'Reusable code', link: '/reusable-code', items: [
+          { text: 'Composables', link: '/reusable-code/composables' },
+          { text: 'Utils', link: '/reusable-code/utils' },
+          { text: 'Stores', link: '/reusable-code/stores' },
+          { text: 'Services', link: '/reusable-code/services' },
+          { text: 'Router', link: '/reusable-code/router' },
+          { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
       { text: 'Libraries', link: '/libraries'},
       { text: 'Naming conventions', link: '/naming-conventions'},

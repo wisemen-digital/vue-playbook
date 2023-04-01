@@ -1,3 +1,7 @@
+---
+title: Design patterns
+---
+
 # SOLID Principles
 
 The SOLID principles of object-oriented programming. These principles are the foundation of object-oriented design and are used to make our code more maintainable, flexible, and reusable.
@@ -8,11 +12,17 @@ The SOLID principles of object-oriented programming. These principles are the fo
 
 If our classes assume multiple responsibilities, they will be highly coupled thus making them more difficult to maintain.
 
+### Example
+
+TODO add example
+
 ## Open closed
 
 > Modules should be open for extension but closed for modification
 
 That means that if you want to extend a module's behavior, you won't need to modify the existing code of that module.
+
+### Example
 
 ```Typescript
 class Person {
@@ -41,7 +51,9 @@ const personFilter = (persons: Person[], filterType: string): Person[] => {
 }
 ```
 
-The problem with personFilter function is that if we want to filter by any other new property we have to change personFilter's code. Let's solve this problem by allowing the filter to accept any prop name and allow it to directly filter it.
+The problem with personFilter function is that if we want to filter by any other new property, we have to change the internal working inside the personFilter function.
+
+Let's solve this problem by allowing the filter to accept any prop name and allow it to directly filter it.
 
 ```Typescript
 const personFilter = (persons: Person[], propName: string): Person[] => {
@@ -49,13 +61,23 @@ const personFilter = (persons: Person[], propName: string): Person[] => {
 }
 ```
 
+Now we can filter by any property we want without changing the code inside of the function.
+
 ## Liskov substitution Principles
 
 > Subclasses should be substitutable for their base class.
 
+### Example
+
+TODO add example
+
 ## Interface Segregation Principle
 
 > Clients should not be forced to depend upon interfaces that they don't use.
+
+### Example
+
+TODO add example
 
 ## Dependency Inversion Principles
 
@@ -68,3 +90,7 @@ At its core, the principle advocates for two things.
 The first is that essential policies and business logic should not depend on low-level, volatile details such as a database connection or file system.
 
 Second, these lower-level concerns and components should be loosely coupled and reusable through meaningful abstractions.
+
+### Example
+
+TODO add example
