@@ -1,7 +1,7 @@
 # Testing
 
-### Unit tests
+This section is about testing your application. It is divided into three parts:
 
-### Integration tests
-
-### E2E tests
+- [Unit testing](/testing/unit-testing.md)
+- [Intergation testing](/testing/intergation-testing.md)
+- [E2E testing](/testing/e2e-testing.md)

@@ -54,9 +54,15 @@ export default defineConfig({
       ]},
       { text: 'Libraries', link: '/libraries'},
       { text: 'Naming conventions', link: '/naming-conventions'},
-      { text: 'Testing', link: '/testing'},
+      { text: 'Testing', link: '/testing', items: [
+        { text: 'Unit testing', link: '/testing/unit-testing' },
+        { text: 'E2E testing', link: '/testing/e2e-testing' },
+        { text: 'Integration testing', link: '/testing/integration-testing' },
+        ]
+      },
       { text: 'Project structure', link: '/project-structure'},
       { text: 'ESLint config', link: '/eslint-config'},
+      { text: 'Clean code', link: '/clean-code'},
       { text: 'Teamwork', link: '/teamwork'},
       { text: 'Tools', link: '/tools'},
     ],
