@@ -5,6 +5,13 @@ layout: home
 hero:
   name: 'The Frontend Bible'
   tagline: 'A guide for creating great web applications.'
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /components
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/appwise-labs/frontend-bible
 
 features:
   - icon: 🛠

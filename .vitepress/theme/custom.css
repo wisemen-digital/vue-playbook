@@ -1,3 +1,7 @@
 :root {
     --vp-c-brand: #B3DB11;
+    --vp-c-brand-dark: black;
+
+    --vp-c-brand-lighter: #B3DB11;
+    --vp-c-brand-darker: black;
 }

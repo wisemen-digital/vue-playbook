@@ -20,6 +20,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Team', link: '/team' },
     ],
     editLink: {
       pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
