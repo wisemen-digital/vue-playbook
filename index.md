@@ -32,9 +32,9 @@ features:
     details: How to create great components that are easy to use and understand
     link: /components
   - icon: 📦
-    title: Composables & Utils
-    details: How to create reusable logic that can be used in multiple components.
-    link: /composables
+    title: Reusable code
+    details: How to create reusable code that can be used in multiple components.
+    link: /reusable-code
   - icon: 🧪
     title: Testing
     details: How to write tests that matter and how they can help you write better code.

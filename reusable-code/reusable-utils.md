@@ -1,4 +1,4 @@
-# Utils (Helpers)
+# Utils
 
 Utils are reusable pieces of logic that are not specific to vue and never contain any state. A good example is
 the `dates.util.ts`. Each function is

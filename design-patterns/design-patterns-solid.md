@@ -2,13 +2,13 @@
 
 The SOLID principles of object-oriented programming. These principles are the foundation of object-oriented design and are used to make our code more maintainable, flexible, and reusable.
 
-### Single responsibility
+## Single responsibility
 
 > A class should have one, and only one, reason to change.
 
 If our classes assume multiple responsibilities, they will be highly coupled thus making them more difficult to maintain.
 
-### Open closed
+## Open closed
 
 > Modules should be open for extension but closed for modification
 
@@ -49,15 +49,15 @@ const personFilter = (persons: Person[], propName: string): Person[] => {
 }
 ```
 
-### Liskov substitution Principles
+## Liskov substitution Principles
 
 > Subclasses should be substitutable for their base class.
 
-### Interface Segregation Principle
+## Interface Segregation Principle
 
 > Clients should not be forced to depend upon interfaces that they don't use.
 
-### Dependency Inversion Principles
+## Dependency Inversion Principles
 
 > High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
@@ -68,36 +68,3 @@ At its core, the principle advocates for two things.
 The first is that essential policies and business logic should not depend on low-level, volatile details such as a database connection or file system.
 
 Second, these lower-level concerns and components should be loosely coupled and reusable through meaningful abstractions.
-
-## Cool design patterns
-
-### Builder pattern
-
-Builder is a creational design pattern, which allows constructing complex objects step by step.
-
-```
-class StringBuilder {
-  result = '';
-
-  append(value: string): StringBuilder {
-    this.result += value;
-    return this;
-  }
-
-  toString(): string {
-    return this.result;
-  }
-}
-
-const stringBuilder = new StringBuilder();
-
-const result = stringBuilder
-  .append('Test')
-  .append('Wisemen')
-  .append('Cool')
-  .append('Chaining!')
-  .append('Great times!')
-  .toString();
-
-console.log(result); // output: TestWisemenCoolChaining!Great times!
-```
