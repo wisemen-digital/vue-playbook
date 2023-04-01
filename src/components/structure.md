@@ -32,20 +32,20 @@ const emit = defineEmits<{
   (e: 'change', value: Person),
 }>();
 
-
-
-
-
 const employeeStore = useEmployeeStore();
 
-const isVisible = ref<boolean>(false);
+const employeeForm = ref<EmployeeForm>({
+  firstName: ''
+});
 
 const isLoading = computed<boolean>(() => {
   return employeeStore.isLoading;
 });
 
 const initForm = () => {
-  isVisible.value = true;
+  employeeForm.value = {
+    firstName: ''
+  };
 };
 
 onMounted(() => {
@@ -55,24 +55,23 @@ onMounted(() => {
 defineExpose({
   initForm,
 });
-
 </script>
 
 <template>
-  <div>
-    <button @click="initForm">Add Employee</button>
-    <div v-if="isVisible">
-      <FormDropdown />
-      <FormCurrencyInput />
-      <FormSelectButton />
-    </div>
-  </div>
+  <section>
+    <form class="space-y-2">
+      <FormInput 
+          v-model="employeeForm.firstName"
+          label="First name"
+      />
+      <button @click="initForm">Add Employee</button>
+    </form>
+  </section>
 </template>
 
 <style scoped>
-.form {
-   display: flex;
-   flex-direction: column;
+button {
+  background-color: black;
 }
 </style>
 ```
