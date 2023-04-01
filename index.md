@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "The Frontend Bible"
-  tagline: "A guide for creating great web applications."
+  name: 'The Frontend Bible'
+  tagline: 'A guide for creating great web applications.'
 
 features:
   - icon: 🛠

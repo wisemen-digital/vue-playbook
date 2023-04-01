@@ -1,4 +1,5 @@
 # Project Structure
+
 The recommend project structure for medium to large application is a hybrid between the split-by-type and split-by-module. All the folders in the `src` (root) contain shared code. (
 services, stores, types, ...)
 
@@ -39,10 +40,12 @@ The module folder contains multiple folders grouped by "features" eg. **employee
 ```
 
 ### Shared components folder structure
-Each project is always going to contain multiple components that are shared accross multiple modules and views. 
+
+Each project is always going to contain multiple components that are shared accross multiple modules and views.
 The recommended structure is to have a finite number of root folders like `app`, `form`, `table`, `layout`, ...
-Each folder contains the matching component type eg. `AppButton.vue` or `FormInput.vue`. 
+Each folder contains the matching component type eg. `AppButton.vue` or `FormInput.vue`.
 It's also a good practice to give each component it's own folder so that you can add story (Storybook/Histoire) or test files.
+
 ```
 - assets
 - components
@@ -72,5 +75,3 @@ It's also a good practice to give each component it's own folder so that you can
 - composables
 - ...
 ```
-
-

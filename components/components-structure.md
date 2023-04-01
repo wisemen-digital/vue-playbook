@@ -1,21 +1,22 @@
 # Components - Structure
+
 When writing components, you should always follow this structure.
 
-| Order                   | Example                                                       |
-|-------------------------|---------------------------------------------------------------|
-| 1. Imports              | `import { defineProps, defineEmits } from 'vue';`             |
-| 2. Props                | `const props = defineProps<{value: Person}>();`               |
-| 3. Emits                | `const emit = defineEmits<{(e: 'change', value: Person)}>();` |
-| 4. Composable           | `const { isLoading } = useLoading()`                          |
-| 5. Refs                 | `const isLoading = ref<boolean>(false)`                       |
-| 6. Computed properties  | `const isLoading = computed<boolean>(() => {})`               |
-| 7. Methods              | `initForm() {}`                                               |
-| 8. Lifecycle hooks      | `onMounted(() => {})`                                         |
-| 9. defineExpose         | `defineExpose({})`                                            |
-| 10. Template            | `<template>`                                                  |
-| 11. Styles              | `<style scoped>`                                              |
+| Element                | Example                                                       |
+| ---------------------- | ------------------------------------------------------------- |
+| 1. Imports             | `import { defineProps, defineEmits } from 'vue';`             |
+| 2. Props               | `const props = defineProps<{value: Person}>();`               |
+| 3. Emits               | `const emit = defineEmits<{(e: 'change', value: Person)}>();` |
+| 4. Composable          | `const { isLoading } = useLoading()`                          |
+| 5. Refs                | `const isLoading = ref<boolean>(false)`                       |
+| 6. Computed properties | `const isLoading = computed<boolean>(() => {})`               |
+| 7. Methods             | `initForm() {}`                                               |
+| 8. Lifecycle hooks     | `onMounted(() => {})`                                         |
+| 9. defineExpose        | `defineExpose({})`                                            |
+| 10. Template           | `<template>`                                                  |
+| 11. Styles             | `<style scoped>`                                              |
 
-Example of a component:
+Example of a well-structured component:
 
 ```vue
 <script lang="ts">
@@ -28,6 +29,10 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: 'change', value: Person),
 }>();
+
+
+
+
 
 const employeeStore = useEmployeeStore();
 
@@ -63,9 +68,9 @@ defineExpose({
 </template>
 
 <style scoped>
-    .form {
-        display: flex;
-        flex-direction: column;
-    }
+.form {
+   display: flex;
+   flex-direction: column;
+}
 </style>
 ```

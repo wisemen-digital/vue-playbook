@@ -8,10 +8,10 @@ think about it ever again.
 A great way to quickly find things in your IDE is being searching directly by file name. A simple way to improve your
 experience is to suffix your components with their function.
 
-| Type         | Example              | 
-|--------------|----------------------|
-| **types**    | `example.type.ts`    | 
-| **services** | `example.service.ts` | 
+| Type         | Example              |
+| ------------ | -------------------- |
+| **types**    | `example.type.ts`    |
+| **services** | `example.service.ts` |
 | **stores**   | `example.store.ts`   |
 | **routes**   | `example.routes.ts`  |
 | **views**    | `ExampleView.ts`     |
@@ -25,7 +25,7 @@ experience is to suffix your components with their function.
 ### Object name casing
 
 | Type                       | Casing               | Example                |
-|----------------------------|----------------------|------------------------|
+| -------------------------- | -------------------- | ---------------------- |
 | **services**               | PascalCase           | `ExampleService`       |
 | **stores**                 | use + PascalCase     | `useExampleStore`      |
 | **composables**            | use + PascalCase     | `useExampleComposable` |
@@ -45,21 +45,19 @@ experience is to suffix your components with their function.
 
 Always. and I do mean always. Give. Your. Components. Two. Word. Names.
 
-| ❌ Bad examples | ✅ Good examples | 
-|----------------|-----------------|
-| Table.vue      | BaseTable.vue   | 
-| Button.vue     | AppButton.vue   | 
-| Input.vue      | FormInput.vue   |
+| ❌ Bad examples | ✅ Good examples |
+| --------------- | ---------------- |
+| Table.vue       | BaseTable.vue    |
+| Button.vue      | AppButton.vue    |
+| Input.vue       | FormInput.vue    |
 
 ### The longer the better 🍆
 
 When creating components that are tightly coupled with a view or module. Always prefix your component with the name of
 the module.
 
-| ❌ Bad examples        | ✅ Good examples                 | 
-|-----------------------|---------------------------------|
-| InformationStep.vue   | ClientUpdateInformationStep.vue | 
-| Calendar.vue          | ContractCreateCalendar.vue      | 
+| ❌ Bad examples       | ✅ Good examples                |
+| --------------------- | ------------------------------- |
+| InformationStep.vue   | ClientUpdateInformationStep.vue |
+| Calendar.vue          | ContractCreateCalendar.vue      |
 | DetailInformation.vue | EmployeeDetailInformation.vue   |
-
-

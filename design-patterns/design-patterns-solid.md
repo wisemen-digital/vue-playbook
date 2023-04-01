@@ -1,13 +1,15 @@
 # SOLID Principles
+
 The SOLID principles of object-oriented programming. These principles are the foundation of object-oriented design and are used to make our code more maintainable, flexible, and reusable.
 
 ### Single responsibility
+
 > A class should have one, and only one, reason to change.
 
 If our classes assume multiple responsibilities, they will be highly coupled thus making them more difficult to maintain.
 
-
 ### Open closed
+
 > Modules should be open for extension but closed for modification
 
 That means that if you want to extend a module's behavior, you won't need to modify the existing code of that module.
@@ -46,12 +48,13 @@ const personFilter = (persons: Person[], propName: string): Person[] => {
   return array.filter(element => element[propName] === value)
 }
 ```
-  
+
 ### Liskov substitution Principles
+
 > Subclasses should be substitutable for their base class.
 
-
 ### Interface Segregation Principle
+
 > Clients should not be forced to depend upon interfaces that they don't use.
 
 ### Dependency Inversion Principles
@@ -65,11 +68,13 @@ At its core, the principle advocates for two things.
 The first is that essential policies and business logic should not depend on low-level, volatile details such as a database connection or file system.
 
 Second, these lower-level concerns and components should be loosely coupled and reusable through meaningful abstractions.
- 
+
 ## Cool design patterns
 
 ### Builder pattern
+
 Builder is a creational design pattern, which allows constructing complex objects step by step.
+
 ```
 class StringBuilder {
   result = '';
@@ -96,5 +101,3 @@ const result = stringBuilder
 
 console.log(result); // output: TestWisemenCoolChaining!Great times!
 ```
-
-

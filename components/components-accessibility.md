@@ -3,7 +3,7 @@
 Writing semantic code helps readability, maintainability and improving the accessibility.
 
 | Element         | Description and correct usage                |
-|-----------------|----------------------------------------------|
+| --------------- | -------------------------------------------- |
 | div             | Use divs for layout purposes.                |
 | span            | Use spans for inline text.                   |
 | section         | Use sections for big pieces of code.         |
@@ -15,7 +15,7 @@ Writing semantic code helps readability, maintainability and improving the acces
 | input           | Use inputs for inputs.                       |
 | label           | Use labels for labels.                       |
 | form            | Use forms for forms.                         |
-| table           | Use tables for tables.                       |  
+| table           | Use tables for tables.                       |
 | ul, ol          | Use lists for lists.                         |
 | li              | Use list items for list items.               |
 | img             | Use images for images.                       |
@@ -27,12 +27,13 @@ Writing semantic code helps readability, maintainability and improving the acces
 Accessibility is important for everyone. It helps people with disabilities to use your application. It also helps people with different screen sizes and devices to use your application.
 
 example:
+
 ```vue
 <template>
-    <div>
-        <h1>Accessibility</h1>
-        <p>Accessibility is important for everyone. It helps people with disabilities to use your application. It also helps people with different screen sizes and devices to use your application.</p>
-    </div>
+  <div>
+    <h1>Accessibility</h1>
+    <p>Accessibility is important for everyone. It helps people with disabilities to use your application. It also helps people with different screen sizes and devices to use your application.</p>
+  </div>
 </template>
 ```
 

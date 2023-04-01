@@ -4,6 +4,7 @@ When writing components, you should always try to split them into smart and dumb
 This will make your components easier to understand and maintain when adding or changing functionality.
 
 ## Smart components (container)
+
 Smart components are usually the "views" of your application and are rendered by the router. They are responsible for handling user interaction and passing data to dumb components.
 
 - Imports all of your stores, router, services, ...
@@ -13,6 +14,7 @@ Smart components are usually the "views" of your application and are rendered by
 - Are focused on handling emits from dumb components
 
 Example:
+
 ```vue
 <!--EmployeesView.vue-->
 <script lang="ts">
@@ -33,15 +35,17 @@ const onButtonClick = (uuid: string): void => {
 ```
 
 ## Dumb components (presentational)
+
 Dumb components are usually rendered by smart components. They are responsible for rendering data and emitting events.
 
 - Pure input & output (props & emits)
 - Never contain any import of a router, store, service, ...
-    - This will prevent them from being dependent on the context they are used in
-    - This will make them easier to test, reuse and understand
+  - This will prevent them from being dependent on the context they are used in
+  - This will make them easier to test, reuse and understand
 - Are focused on rendering data, handling user interaction and emitting events
 
 Example:
+
 ```vue
 <!--EmployeesTable.vue-->
 <script lang="ts">

@@ -5,6 +5,7 @@ There are several easy to follow rules that will help you write clean code. They
 ## 1. Comments
 
 #### No Comments
+
 Comments are the worst thing you can do to your code. They are a sign of bad code. If you need to comment your code you are doing something wrong and you're not writing readable and understandable code.
 
 The default rule is: **no comments**. Only when doing something really weird and you want to let other people know exactly why you did that weird thing in the first place.
@@ -14,6 +15,7 @@ No commented code. No exception. Git knows everything or just write it again lat
 #### Exceptions
 
 The one and only exception is when you are writing documentation or creating a library to explain the usage of a function.
+
 ```typescript
 // Formats the date to dd-mm-yyyy
 const formatDate = (date: Date) => {
