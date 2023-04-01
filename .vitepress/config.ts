@@ -6,10 +6,7 @@ export default defineConfig({
   title: "The Frontend Bible",
   vite: {
     plugins: [
-      SearchPlugin({
-        optimize: true,
-        preset: "match",
-      })
+      SearchPlugin()
     ]
   },
   srcDir: 'src',
