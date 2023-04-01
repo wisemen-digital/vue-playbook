@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,N as o}from"./chunks/framework.0799945b.js";const A=JSON.parse('{"title":"Composable","description":"","frontmatter":{},"headers":[],"relativePath":"composables.md"}'),l={name:"composables.md"},p=o("",4),e=[p];function t(c,r,y,F,D,i){return n(),a("div",null,e)}const d=s(l,[["render",t]]);export{A as __pageData,d as default};

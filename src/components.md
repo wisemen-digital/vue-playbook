@@ -4,11 +4,11 @@ Components are the building blocks of your application. They are the most import
 
 ### Table of contents
 
-- [Naming](/src/components/naming.md)
-- [Structure](/src/components/structure.md)
-- [Smart vs Dumb components](/src/components/smart-dumb.md)
-- [Props](/src/components/props.md)
-- [Emits](/src/components/emits.md)
-- [Slots](/src/components/slots.md)
-- [Testing](/src/components/testing.md)
-- [Accessibility](/src/components/accessibility.md)
+- [Naming](components/naming.md)
+- [Structure](components/structure.md)
+- [Smart vs Dumb components](components/smart-dumb.md)
+- [Props](components/props.md)
+- [Emits](components/emits.md)
+- [Slots](components/slots.md)
+- [Testing](components/testing.md)
+- [Accessibility](components/accessibility.md)

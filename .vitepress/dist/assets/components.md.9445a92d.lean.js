@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as a,N as n}from"./chunks/framework.0799945b.js";const y=JSON.parse('{"title":"Writing components for dummies","description":"","frontmatter":{},"headers":[],"relativePath":"components.md"}'),o={name:"components.md"},t=n("",44),l=[t];function p(i,r,c,m,d,u){return a(),s("div",null,l)}const f=e(o,[["render",p]]);export{y as __pageData,f as default};

@@ -1,1 +1,0 @@
-import{_ as s,c as n,o as a,N as e}from"./chunks/framework.0799945b.js";const D=JSON.parse('{"title":"Design patterns","description":"","frontmatter":{},"headers":[],"relativePath":"design-patterns.md"}'),l={name:"design-patterns.md"},p=e("",5),t=[p];function o(r,i,c,C,A,d){return a(),n("div",null,t)}const g=s(l,[["render",o]]);export{D as __pageData,g as default};
