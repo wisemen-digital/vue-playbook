@@ -37,10 +37,10 @@ features:
     link: /reusable-code
   - icon: 🧪
     title: Testing
-    details: How to write tests that matter and how they can help you write better code.
+    details: How to write tests that matter and how they can help prevent regression.
     link: /testing
   - icon: 🤝
     title: Team work makes the dream work
-    details: How to work together in a team. How to create a culture of sharing knowledge and best practices.
+    details: How to work together in a team and stimulate a culture of sharing knowledge and best practices.
     link: /teamwork
 ---
