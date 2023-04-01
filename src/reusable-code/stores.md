@@ -1,3 +1,5 @@
+#### [Reusable Code](/reusable-code.md)
+
 # Stores
 
 Stores are used to store data that is shared between multiple components in your application.

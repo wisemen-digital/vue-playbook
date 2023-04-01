@@ -1,4 +1,6 @@
-# Components - Structure
+#### [Components](/components.md)
+
+# Structure
 
 When writing components, you should always follow this structure.
 

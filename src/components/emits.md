@@ -1,4 +1,6 @@
-# Components - Emits
+#### [Components](/components.md)
+
+# Emits
 
 Emits are the output of a component. They are used to pass data from the component to the parent. These emits are immutable and can't be changed by the component itself.
 

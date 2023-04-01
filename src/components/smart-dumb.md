@@ -1,4 +1,6 @@
-# Components - Smart vs Dumb
+#### [Components](/components.md)
+
+# Smart vs Dumb
 
 When writing components, you should always try to split them into smart and dumb components.
 This will make your components easier to understand and maintain when adding or changing functionality.

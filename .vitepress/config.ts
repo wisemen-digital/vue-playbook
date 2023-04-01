@@ -6,7 +6,10 @@ export default defineConfig({
   title: "The Frontend Bible",
   vite: {
     plugins: [
-      SearchPlugin()
+      SearchPlugin({
+        optimize: true,
+        preset: "match",
+      })
     ]
   },
   srcDir: './src',
@@ -14,12 +17,11 @@ export default defineConfig({
   lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
     ],
     editLink: {
-      pattern: 'https://github.com/appwise-labs/frontend-bible/src/:path'
+      pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
     },
     logo: '/logo.png',
     sidebar: [

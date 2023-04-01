@@ -1,4 +1,6 @@
-# Components - Accessibility
+#### [Components](/components.md)
+
+# Accessibility
 
 Writing semantic code helps readability, maintainability and improving the accessibility.
 

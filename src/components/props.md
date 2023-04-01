@@ -1,4 +1,6 @@
-# Components - Props
+#### [Components](/components.md)
+
+# Props
 
 Props are the input of a component. They are used to pass data to the component.
 These props are immutable and can't be changed by the component itself

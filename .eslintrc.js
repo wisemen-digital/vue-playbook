@@ -23,6 +23,7 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": "off",
         "vue/no-parsing-error": "off",
         "vue/require-v-for-key": "off",
+        "vue/multi-word-component-names": "off",
         "vue/no-useless-template-attributes": "off",
       },
     },

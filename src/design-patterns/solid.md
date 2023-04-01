@@ -1,6 +1,4 @@
----
-title: Design patterns
----
+#### [Design patterns](/design-patterns.md)
 
 # SOLID Principles
 

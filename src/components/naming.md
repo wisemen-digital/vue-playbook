@@ -1,4 +1,6 @@
-# Components - Naming conventions
+#### [Components](/components.md)
+
+# Naming conventions
 
 When naming your components, you should always follow these conventions.
 

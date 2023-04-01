@@ -1,4 +1,6 @@
-# Components - Slots
+#### [Components](/components.md)
+
+# Slots
 
 Slots are the way to other components to your components. This can be used to create reusable components that can be used in different ways or overwrite the default behaviour.
 

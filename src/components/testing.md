@@ -1,4 +1,6 @@
-# Components - Testing (WIP)
+#### [Components](/components.md)
+
+# Testing (WIP)
 
 Testing components is important. It will make sure that your components work as expected and that
 they don't break when you change something.

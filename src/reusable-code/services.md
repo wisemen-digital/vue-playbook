@@ -1,3 +1,5 @@
+#### [Reusable Code](/reusable-code.md)
+
 # Services
 
 Services are used to fetch data from the backend. They are used in the stores and in the components.

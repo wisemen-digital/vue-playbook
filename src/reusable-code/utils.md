@@ -1,3 +1,5 @@
+#### [Reusable Code](/reusable-code.md)
+
 # Utils
 
 Utils are reusable pieces of logic that are not specific to vue and never contain any state. A good example is
