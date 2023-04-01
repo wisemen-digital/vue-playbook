@@ -26,6 +26,12 @@ export default defineConfig({
     },
     logo: '/bible_logo.png',
     sidebar: [
+      { text: 'Tools', link: '/tools'},
+      { text: 'Project structure', link: '/project-structure'},
+      { text: 'Clean code', link: '/clean-code'},
+      { text: 'Naming conventions', link: '/naming-conventions'},
+      { text: 'ESLint config', link: '/eslint-config'},
+      { text: 'Teamwork', link: '/teamwork'},
       { text: 'Components', link: '/components', items: [
           { text: 'Naming', link: '/components/naming' },
           { text: 'Structure', link: '/components/structure' },
@@ -36,14 +42,6 @@ export default defineConfig({
           { text: 'Accessibility', link: '/components/accessibility' },
         ]
       },
-      {
-        text: 'Design patterns', link: '/design-patterns', items: [
-          {
-            text: 'Solid',
-            link: '/design-patterns/solid',
-          }
-        ],
-      },
       { text: 'Reusable code', link: '/reusable-code', items: [
           { text: 'Composables', link: '/reusable-code/composables' },
           { text: 'Utils', link: '/reusable-code/utils' },
@@ -53,18 +51,20 @@ export default defineConfig({
           { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
       { text: 'Libraries', link: '/libraries'},
-      { text: 'Naming conventions', link: '/naming-conventions'},
       { text: 'Testing', link: '/testing', items: [
         { text: 'Unit testing', link: '/testing/unit-testing' },
         { text: 'E2E testing', link: '/testing/e2e-testing' },
         { text: 'Integration testing', link: '/testing/integration-testing' },
         ]
       },
-      { text: 'Project structure', link: '/project-structure'},
-      { text: 'ESLint config', link: '/eslint-config'},
-      { text: 'Clean code', link: '/clean-code'},
-      { text: 'Teamwork', link: '/teamwork'},
-      { text: 'Tools', link: '/tools'},
+      {
+        text: 'Design patterns', link: '/design-patterns', items: [
+          {
+            text: 'Solid',
+            link: '/design-patterns/solid',
+          }
+        ],
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/appwise-labs/frontend-bible' }
