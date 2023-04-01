@@ -59,10 +59,8 @@ export default defineConfig({
       },
       {
         text: 'Design patterns', link: '/design-patterns', items: [
-          {
-            text: 'Solid',
-            link: '/design-patterns/solid',
-          }
+          {text: 'Solid', link: '/design-patterns/solid' },
+          {text: 'Builder pattern', link: '/design-patterns/builder-pattern' },
         ],
       },
     ],
