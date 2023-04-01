@@ -2,14 +2,14 @@ module.exports = {
   extends: ["plugin:prettier/recommended", "plugin:md/recommended"],
   overrides: [
     {
-      files: ["*.md.ts", "*.md.vue"], // Will match js code inside *.md files
+      files: ["*.md.ts"],
       rules: {
         "no-unused-vars": "off",
         "no-undef": "off",
       },
     },
     {
-      files: ["*.md.vue"], // Will match js code inside *.md files
+      files: ["*.md.vue"],
       extends: [
         "plugin:vue/vue3-recommended",
         "eslint:recommended",
