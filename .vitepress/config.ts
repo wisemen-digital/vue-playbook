@@ -12,7 +12,8 @@ export default defineConfig({
       })
     ]
   },
-  srcDir: './src',
+  dir: 'src',
+  srcDir: 'src',
   cleanUrls: true,
   lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
