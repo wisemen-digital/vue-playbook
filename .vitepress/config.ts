@@ -12,7 +12,6 @@ export default defineConfig({
       })
     ]
   },
-  dir: 'src',
   srcDir: 'src',
   cleanUrls: true,
   lastUpdated: true,
@@ -25,7 +24,7 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
     },
-    logo: '/favicon.png',
+    logo: '/bible_logo.png',
     sidebar: [
       { text: 'Components', link: '/components', items: [
           { text: 'Naming', link: '/components/naming' },
