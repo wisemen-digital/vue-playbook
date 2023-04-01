@@ -23,7 +23,7 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
     },
-    logo: '/logo.png',
+    logo: 'logo.png',
     sidebar: [
       { text: 'Components', link: '/components', items: [
           { text: 'Naming', link: '/components/naming' },
