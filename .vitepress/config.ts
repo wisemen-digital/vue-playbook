@@ -6,10 +6,11 @@ export default defineConfig({
   title: "The Frontend Bible",
   vite: {
     plugins: [
-      SearchPlugin()
+      SearchPlugin(),
     ]
   },
   srcDir: 'src',
+  dir: 'src',
   cleanUrls: true,
   lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
