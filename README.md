@@ -1,4 +1,4 @@
-# The wisemen Frontend Bible
+# The Frontend Bible
 
 This frontend bible is a collection of best practices, guidelines and tips for frontend development. It is a living document that will be updated as we learn more about frontend development.
 
