@@ -6,7 +6,11 @@ export default defineConfig({
   title: "The Frontend Bible",
   vite: {
     plugins: [
-      SearchPlugin(),
+      SearchPlugin({
+        preset: "default",
+        context: "src",
+        optimize: true,
+      }),
     ]
   },
   srcDir: 'src',
@@ -59,6 +63,11 @@ export default defineConfig({
         text: 'Design patterns', link: '/design-patterns', items: [
           {text: 'Solid', link: '/design-patterns/solid' },
           {text: 'Builder pattern', link: '/design-patterns/builder-pattern' },
+        ],
+      },
+      {
+        text: 'Meetings', link: '/meetings', items: [
+          {text: 'Meeting 17/04/2023', link: '/meetings/meeting_17_04_2023' },
         ],
       },
     ],

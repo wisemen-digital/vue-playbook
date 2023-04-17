@@ -1,6 +1,7 @@
 node_modules
 .DS_Store
 .vitepress/dist
+.vitepress/cache
 *.local
 .eslintcache
 # Editor directories and files
