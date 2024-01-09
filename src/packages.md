@@ -4,4 +4,4 @@ A List of reguarly used packages in our projects. Some of these packages are cre
 
 ### Table of contents
 
-- [Our packages](packages/wisemen-packages.md)
+- [oAuthClient](packages/o-auth-client.md)

@@ -67,7 +67,7 @@ export default defineConfig({
       },
       {
         text: 'Packages', link: '/packages', items: [
-          {text: 'oAuth client', link: '/packages/wisemen-packages' },
+          {text: 'oAuth client', link: '/packages/o-auth-client' },
         ],
       },
       {
