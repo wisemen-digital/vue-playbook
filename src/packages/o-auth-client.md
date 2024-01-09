@@ -1,7 +1,7 @@
 #### [Packages](/packages.md)
 
 
-# OAuth package
+# OAuth Client
 
 ## Installation
 
@@ -46,8 +46,9 @@ axios.interceptors.request.use(config => addAuthorizationHeader(oAuthClient, con
 axios.interceptors.response.use(
   config => config,
   async (error) => {
-    if (!Axios.isAxiosError(error))
-      return Promise.reject(error)
+    if (!Axios.isAxiosError(error)) {
+        return Promise.reject(error)
+    }
 
     const status = error.response?.status ?? null
 
