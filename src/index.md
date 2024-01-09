@@ -50,4 +50,8 @@ features:
     title: Team work makes the dream work
     details: How to work together in a team and stimulate a culture of sharing knowledge and best practices.
     link: /teamwork
+  - icon: 📦
+    title: Packages
+    details: Wisemen packages that can help you create great applications.
+    link: /packages
 ---
