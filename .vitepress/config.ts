@@ -43,6 +43,8 @@ export default defineConfig({
           { text: 'Utils', link: '/reusable-code/utils' },
           { text: 'Stores', link: '/reusable-code/stores' },
           { text: 'Services', link: '/reusable-code/services' },
+          { text: 'Queries', link: '/reusable-code/queries' },
+          { text: 'Mutations', link: '/reusable-code/mutations' },
           { text: 'Router', link: '/reusable-code/router' },
           { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
