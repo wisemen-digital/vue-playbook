@@ -1,17 +1,10 @@
 import { defineConfig } from 'vitepress'
-import { SearchPlugin } from "vitepress-plugin-search";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "The Frontend Bible",
   vite: {
-    plugins: [
-      SearchPlugin({
-        preset: "default",
-        context: "src",
-        optimize: true,
-      }),
-    ]
+    plugins: []
   },
   srcDir: 'src',
   dir: 'src',
@@ -24,7 +17,7 @@ export default defineConfig({
       { text: 'Team', link: '/team' },
     ],
     editLink: {
-      pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
+      pattern: 'https://github.com/wisemen-digital/frontend-bible/blob/main/src/:path'
     },
     logo: '/bible_logo.png',
     sidebar: [
@@ -72,7 +65,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/appwise-labs/frontend-bible' }
+      { icon: 'github', link: 'https://github.com/wisemen-digital/frontend-bible' }
     ]
   }
 })
