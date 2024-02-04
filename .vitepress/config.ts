@@ -59,6 +59,11 @@ export default defineConfig({
         ],
       },
       {
+        text: 'Packages', link: '/packages', items: [
+          {text: 'oAuth client', link: '/packages/o-auth-client' },
+        ],
+      },
+      {
         text: 'Meetings', link: '/meetings', items: [
           {text: 'Meeting 17/04/2023', link: '/meetings/meeting_17_04_2023' },
         ],
