@@ -14,20 +14,20 @@ Every project uses the same ESlint config. This is to ensure that all projects a
 
 #### 2. Add the following to your `.eslintrc.json`:
 
+If you don't have one yet, you may create one in the root of your project.
+
 ```json
-//.eslintrc.json
 {
   "extends": "@appwise/eslint-config-vue"
 }
 ```
 
-#### 3. Add script to `package.json`
+#### 3. Add a script to `package.json`
 
 ```json
-//package.json
 {
   "scripts": {
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .ts,.vue src"
   }
 }
 ```
