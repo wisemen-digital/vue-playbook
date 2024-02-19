@@ -21,6 +21,7 @@ export default defineConfig({
     },
     logo: '/bible_logo.png',
     sidebar: [
+      { text: 'Project template', link: '/project-template'},
       { text: 'Tools', link: '/tools'},
       { text: 'Project structure', link: '/project-structure'},
       { text: 'Clean code', link: '/clean-code'},

@@ -14,6 +14,10 @@ hero:
       link: https://github.com/appwise-labs/frontend-bible
 
 features:
+  - icon: 🤝
+    title: Project Template
+    details: Ready to use, production ready project template.
+    link: /project-template
   - icon: 🛠
     title: Tools
     details: How to setup your development environment, IDE, plugins and more.
@@ -46,10 +50,6 @@ features:
     title: Testing
     details: How to write tests that matter and how they can help prevent regression.
     link: /testing
-  - icon: 🤝
-    title: Team work makes the dream work
-    details: How to work together in a team and stimulate a culture of sharing knowledge and best practices.
-    link: /teamwork
   - icon: 📦
     title: Packages
     details: Wisemen packages that can help you create great applications.
