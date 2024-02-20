@@ -10,4 +10,7 @@ There are several types of resuable code which each have their own responsibilit
 - [Queries](reusable-code/queries.md)
 - [Utils](reusable-code/utils.md)
 - [Authentication](reusable-code/authentication.md)
+- [Models](reusable-code/models.md)
+- [Transformers](reusable-code/transformers.md)
+- [Pagination](reusable-code/pagination.md)
 - [Router](reusable-code/router.md)
