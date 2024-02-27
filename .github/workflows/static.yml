@@ -3,7 +3,7 @@ name: Build and Deploy Vitepress Website
 on:
   push:
     branches:
-      - main  # Change this to your default branch if different
+      - maltsavkiryl-patch-1  # Change this to your default branch if different
 
 jobs:
   build:
