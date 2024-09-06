@@ -11,6 +11,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
+  base: '/frontend-bible/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
