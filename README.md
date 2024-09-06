@@ -16,11 +16,11 @@ This frontend bible is a collection of best practices, guidelines and tips for f
 ### Running the project locally
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Linting
 
 The application uses `eslint`. The configuration is in `.eslintrc.js`.
 
-Run `npm run lint` to lint the code. It will automatically fix linting issues.
+Run `pnpm run lint` to lint the code. It will automatically fix linting issues.
