@@ -27,8 +27,8 @@ The module folder contains multiple folders grouped by "features" eg. **employee
         - customerIndex.model.ts
         - customerIndexDto.model.ts
       - detail
-        - customer.model.ts
-        - customerDto.model.ts
+        - customerDetail.model.ts
+        - customerDetailDto.model.ts
       - create
         - customerCreateDto.model.ts
         - customerCreateForm.model.ts

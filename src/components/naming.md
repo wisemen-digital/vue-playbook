@@ -60,3 +60,21 @@ Example:
   </div>
 </template>
 ```
+
+Other naming conventions to follow:
+
+- Stores
+    - ✅ OfficeStore
+    - ❌ OfficesStore
+- Views
+    - ✅ OfficeView
+    - ❌ OfficesView
+- Detail views
+    - ✅ OfficesDetailView
+    - ❌ OfficeDetailView
+- Service
+    - ✅ OfficesService
+    - ❌ OfficeService
+- Module folders
+    - ✅ office
+    - ❌ offices
