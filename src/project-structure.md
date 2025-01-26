@@ -38,7 +38,8 @@ The module folder contains multiple folders grouped by "features" eg. **employee
       - customerUuid.model.ts
       - customer.transformer.ts
   - modules
-    - customers
+    - customer
+        - components (components specific to the customer module, and cannot be made generic)
         - features
             - create
             - overview
@@ -49,16 +50,22 @@ The module folder contains multiple folders grouped by "features" eg. **employee
                 - CustomerDetailPlanningCalendar.vue
                 - CustomerDetailInfo.vue
               - views
+                - CustomerDetailDataProvider.vue (fetches the data)
                 - CustomerDetailView.vue
                 - CustomerDetailDocumentsView.vue
                 - CustomerDetailPlanningView.vue
-        - services
-            - customer.service.ts
-        - queries
-        - mutations
-        - composables
-            - ...
-        - ...
+        - api 
+            - services
+                - customer.service.ts
+            - queries
+                - customerIndex.query.ts
+                - customerDetail.query.ts
+            - mutations
+                - customerCreate.mutation.ts
+                - customerUpdate.mutation.ts
+                - customerDelete.mutation.ts
+        -routes
+            - customer.routes.ts
   - router
   - stores (shared stores)
   - types (shared types)

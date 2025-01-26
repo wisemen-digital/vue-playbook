@@ -61,6 +61,10 @@ Example:
 </template>
 ```
 
+## Directory and module naming
+
+When naming your directories and modules, you should always use the singular form. This will make it easier to understand what the module is for.
+
 Other naming conventions to follow:
 
 - Stores
