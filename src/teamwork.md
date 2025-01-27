@@ -12,56 +12,56 @@ In cases where you disagree with the reviewer, have a discussion to find common 
 ### Important things to look at in a pull request:
 
 #### Readability
-- <input type="checkbox"/> Is the code easy to read?
-- <input type="checkbox"/> Are the variable names descriptive?
-- <input type="checkbox"/> Are the functions short and to the point?
-- <input type="checkbox"/> Check if the code is formatted correctly.
-- <input type="checkbox"/> Check if the code is consistent with the rest of the codebase.
+- <input type="checkbox" aria-label="checkbox"/> Is the code easy to read?
+- <input type="checkbox" aria-label="checkbox"/> Are the variable names descriptive?
+- <input type="checkbox" aria-label="checkbox"/> Are the functions short and to the point?
+- <input type="checkbox" aria-label="checkbox"/> Check if the code is formatted correctly.
+- <input type="checkbox" aria-label="checkbox"/> Check if the code is consistent with the rest of the codebase.
 
 #### Best practices
-- <input type="checkbox"/> Does the code follow coding standards and conventions?
-- <input type="checkbox"/> Are there any anti-patterns or redundant code present?
+- <input type="checkbox" aria-label="checkbox"/> Does the code follow coding standards and conventions?
+- <input type="checkbox" aria-label="checkbox"/> Are there any anti-patterns or redundant code present?
 
 #### Comments and Documentation
-- <input type="checkbox"/> Are there any comments that are unclear or unnecessary?
-- <input type="checkbox"/> Are there any parts of the code that are not documented?
-- <input type="checkbox"/> Is the pull request description up to date?
+- <input type="checkbox" aria-label="checkbox"/> Are there any comments that are unclear or unnecessary?
+- <input type="checkbox" aria-label="checkbox"/> Are there any parts of the code that are not documented?
+- <input type="checkbox" aria-label="checkbox"/> Is the pull request description up to date?
 
 #### Tests
 - Are there any tests present?
-  - <input type="checkbox"/> Check for unit, integration and end-to-end tests, depending on the scope. 
+  - <input type="checkbox" aria-label="checkbox"/> Check for unit, integration and end-to-end tests, depending on the scope. 
 - Are the test relevant and meaningful?
-  - <input type="checkbox"/> Ensure test cover edge cases, happy paths, and failure scenarios. 
+  - <input type="checkbox" aria-label="checkbox"/> Ensure test cover edge cases, happy paths, and failure scenarios. 
 - Do all tests pass?
-  - <input type="checkbox"/> Check the test results in the CI/CD pipeline.
+  - <input type="checkbox" aria-label="checkbox"/> Check the test results in the CI/CD pipeline.
 
 #### Performance
 - Doest the code perform effieciently?
-  - <input type="checkbox"/> Check for any potential bottlenecks for data-intensive operations.
+  - <input type="checkbox" aria-label="checkbox"/> Check for any potential bottlenecks for data-intensive operations.
 - Is the algorithm optimal?
-  - <input type="checkbox"/> Look for unnecessary loops, repeated operations, or redundant code.
+  - <input type="checkbox" aria-label="checkbox"/> Look for unnecessary loops, repeated operations, or redundant code.
 
 #### Security
 - Are there any security vulnerabilities?
-  - <input type="checkbox"/> Check for any sensitive data being exposed, SQL injection, or XSS attacks.
+  - <input type="checkbox" aria-label="checkbox"/> Check for any sensitive data being exposed, SQL injection, or XSS attacks.
 - Is sensitive information handled correctly?
-  - <input type="checkbox"/> Ensure that passwords, API keys, and other sensitive data are not hardcoded. They should be stored in the correct environment variables.
+  - <input type="checkbox" aria-label="checkbox"/> Ensure that passwords, API keys, and other sensitive data are not hardcoded. They should be stored in the correct environment variables.
 
 #### Dependencies
 - Are there any new dependencies?
-  - <input type="checkbox"/> Check if the dependencies are necessary and if they are up to date.
+  - <input type="checkbox" aria-label="checkbox"/> Check if the dependencies are necessary and if they are up to date.
 - Are the versions of dependencies compatible?
-  - <input type="checkbox"/> Ensure that the dependencies are compatible with the rest of the codebase.
+  - <input type="checkbox" aria-label="checkbox"/> Ensure that the dependencies are compatible with the rest of the codebase.
 
 #### Backward compatibility
 - Does the code break any existing functionality?
-  - <input type="checkbox"/> Check if the new code breaks any existing features or functionality.
+  - <input type="checkbox" aria-label="checkbox"/> Check if the new code breaks any existing features or functionality.
 
 #### Overall Review
 - Is the PR scope appropriate?
-  - <input type="checkbox"/> Ensure the PR isn’t doing too much. A focused, smaller PR is easier to review and merge.
+  - <input type="checkbox" aria-label="checkbox"/> Ensure the PR isn’t doing too much. A focused, smaller PR is easier to review and merge.
 - Is feedback addressed?
-  - <input type="checkbox"/> Check if the feedback from previous reviews has been addressed.
+  - <input type="checkbox" aria-label="checkbox"/> Check if the feedback from previous reviews has been addressed.
 
 ### Pair programming
 
