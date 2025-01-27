@@ -21,18 +21,19 @@ Example:
 <!--EmployeesView.vue-->
 <script lang="ts">
 const router = useRouter();
-const employeeStore = useEmployeeStore();
+const employeeQuery = useEmployeeQuery();
 
-const { employees } = storeToRefs(employeeStore);
+const employees = computed<Employee>(
+    () => employeeQuery.data?.employees ?? []
+);
 
-const onButtonClick = (uuid: string): void => {
-  router.push('/example');
+const onEmployeeItemClick = (uuid: string): void => {
+  router.push(`/employee/example/${uuid}`);
 }
-
 </script>
 
 <template>
-  <EmployeesTable :employees="employees" @row:click="onEmployeeItemClick" />
+  <EmployeesTable :employees="employees" @row-click="onEmployeeItemClick" />
 </template>
 ```
 
@@ -57,10 +58,10 @@ const props = defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (e: 'row:click', value: Person),
+  rowClick: [value: Employee]
 }>();
 
-const onRowClick = (employee: Employee): void => {
+function onRowClick(employee: Employee): void {
   emit('row:click', employee);
 }
 
