@@ -13,5 +13,5 @@ Your package.json is a magic file where you can add any and everything. It's ver
 When using a library for components, validation, etc. It's always really smart to create a wrapper around it. This will:
 
 - Help you control and clean up the API so that only the necessary options are exposed.
-- Give you the opportunity to cusomize them and add functionalty.
-- If you every decide to switch the library or are required to create your own custom implementation, you already have the API defined and every usage of that component doesn't have to change.
+- Give you the opportunity to customize them and add functionality.
+- If you ever decide to switch the library or are required to create your own custom implementation, you already have the API defined and every usage of that component doesn't have to change.
