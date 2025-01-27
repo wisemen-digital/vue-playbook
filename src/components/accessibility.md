@@ -4,25 +4,25 @@
 
 Writing semantic code helps readability, maintainability and improving the accessibility.
 
-| Element         | Description and correct usage                |
-| --------------- | -------------------------------------------- |
-| div             | Use divs for layout purposes.                |
-| span            | Use spans for inline text.                   |
-| section         | Use sections for big pieces of code.         |
-| article         | Use articles for a single item in a section. |
-| h1, h2, h3, ... | Use headings for titles.                     |
-| p               | Use paragraphs for text and paragraphs.      |
-| a               | Use anchors for links.                       |
-| button          | Use buttons for buttons.                     |
-| input           | Use inputs for inputs.                       |
-| label           | Use labels for labels.                       |
-| form            | Use forms for forms.                         |
-| table           | Use tables for tables.                       |
-| ul, ol          | Use lists for lists.                         |
-| li              | Use list items for list items.               |
-| img             | Use images for images.                       |
-| iframe          | Use iframes for iframes.                     |
-| svg             | Use svg for svg.                             |
+| Element         | Description and correct usage                                                                                        |
+| --------------- |----------------------------------------------------------------------------------------------------------------------|
+| div             | Use divs for layout purposes.                                                                                        |
+| span            | Use spans for inline text.                                                                                           |
+| section         | Use section for standalone, thematic content areas that deserve a heading and can stand alone in a document outline. |
+| article         | Use article when the content can be independently understood or distributed.                                         |
+| h1, h2, h3, ... | Use headings for titles.                                                                                             |
+| p               | Use paragraphs for text and paragraphs.                                                                              |
+| a               | Use anchors for links.                                                                                               |
+| button          | Use buttons for buttons.                                                                                             |
+| input           | Use inputs for inputs.                                                                                               |
+| label           | Use labels for labels.                                                                                               |
+| form            | Use forms for forms.                                                                                                 |
+| table           | Use tables for tables.                                                                                               |
+| ul, ol          | Use lists for lists.                                                                                                 |
+| li              | Use list items for list items.                                                                                       |
+| img             | Use images for images.                                                                                               |
+| iframe          | Use iframes for iframes.                                                                                             |
+| svg             | Use svg for svg.                                                                                                     |
 
 ## Accessibility
 
