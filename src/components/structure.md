@@ -5,11 +5,11 @@
 When writing components, you should always follow this structure.
 
 | Element                | Example                                                       |
-| ---------------------- | ------------------------------------------------------------- |
+| ---------------------- |---------------------------------------------------------------|
 | 1. Imports             | `import { defineProps, defineEmits } from 'vue';`             |
 | 2. Props               | `const props = defineProps<{value: Person}>();`               |
 | 3. Emits               | `const emit = defineEmits<{(e: 'change', value: Person)}>();` |
-| 4. Composable          | `const { isLoading } = useLoading()`                          |
+| 4. Composable          | `const loading = useLoading()`                                |
 | 5. Refs                | `const isLoading = ref<boolean>(false)`                       |
 | 6. Computed properties | `const isLoading = computed<boolean>(() => {})`               |
 | 7. Methods             | `initForm() {}`                                               |
