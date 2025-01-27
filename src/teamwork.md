@@ -63,7 +63,7 @@ In cases where you disagree with the reviewer, have a discussion to find common 
 - Is feedback addressed?
   - <input type="checkbox" aria-label="checkbox"/> Check if the feedback from previous reviews has been addressed.
 
-### Pair programming
+## Pair programming
 
 Pair programming is a great way to collaborate and share knowledge. It involves two developers working together on the same codebase, with one developer writing the code and the other reviewing it in real-time.
 
