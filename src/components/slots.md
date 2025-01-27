@@ -10,7 +10,7 @@ For defining slots there are a few best practices to follow.
 
 Try to keep your slots as simple as possible. This will make it easier to use your component. If you have a component that has a lot of slots, it might be a good idea to split it up into multiple components.
 
-> Most of the time you can use props to pass data to your component. This will make the user of your component easier and less prone to error.
+> Most of the time you can use props to pass data to your component. This will make the use of your component easier and less prone to error.
 
 ## Use slots to predefine the content of an component
 
