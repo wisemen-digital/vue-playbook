@@ -74,11 +74,11 @@ Other naming conventions to follow:
     - ✅ OfficeView
     - ❌ OfficesView
 - Detail views
-    - ✅ OfficesDetailView
-    - ❌ OfficeDetailView
+    - ✅ OfficeDetailView
+    - ❌ OfficesDetailView
 - Service
-    - ✅ OfficesService
-    - ❌ OfficeService
+    - ✅ OfficeService
+    - ❌ OfficesService
 - Module folders
     - ✅ office
     - ❌ offices

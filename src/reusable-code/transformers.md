@@ -11,60 +11,60 @@ Transformers are classes that make use of static methods to transform data.
 
 - Use static methods to transform data
 - Use the same name for the transformer as the class you are transforming (e.g. `CustomerIndexTransformer` for `CustomerIndex` or `CustomerDetailTransformer` for `CustomerDetail`)
-- Use a `fromdto` method to transform data from a DTO to a model
-- Use a `todto` method to transform data from a model to a DTO
+- Use a `fromDto` method to transform data from a DTO to a model
+- Use a `toDto` method to transform data from a model to a DTO
 - Use a `toForm` method to transform data from a model to a form
 
 ✅ Good example of a transformer function
 
 ```typescript
 export class CustomerIndexTransformer {
-    static fromdto(customerIndexDto: CustomerIndexDto): CustomerIndex {
+    static fromDto(customerIndexDto: CustomerIndexDto): CustomerIndex {
         return {
             uuid: customerIndexDto.uuid,
             name: customerIndexDto.name,
             email: customerIndexDto.email,
-            phone: PhoneNumberTransformer.fromdto(customerIndexDto.phone),
-            address: AddressTransformer.fromdto(customerIndexDto.address),
-            createdAt: DateTransformer.fromdto(customerIndexDto.createdAt),
-            updatedAt: DateTransformer.fromdto(customerIndexDto.updatedAt),
+            phone: PhoneNumberTransformer.fromDto(customerIndexDto.phone),
+            address: AddressTransformer.fromDto(customerIndexDto.address),
+            createdAt: DateTransformer.fromDto(customerIndexDto.createdAt),
+            updatedAt: DateTransformer.fromDto(customerIndexDto.updatedAt),
         }
     }
 }
 
 export class CustomerDetailTransformer {
-    static fromdto(customerDetailDto: CustomerDetailDto): CustomerDetail {
+    static fromDto(customerDetailDto: CustomerDetailDto): CustomerDetail {
         return {
             uuid: customerDetailDto.uuid,
             name: customerDetailDto.name,
             email: customerDetailDto.email,
-            phone: PhoneNumberTransformer.fromdto(customerDetailDto.phone),
-            address: AddressTransformer.fromdto(customerDetailDto.address),
-            createdAt: DateTransformer.fromdto(customerDetailDto.createdAt),
-            updatedAt: DateTransformer.fromdto(customerDetailDto.updatedAt),
+            phone: PhoneNumberTransformer.fromDto(customerDetailDto.phone),
+            address: AddressTransformer.fromDto(customerDetailDto.address),
+            createdAt: DateTransformer.fromDto(customerDetailDto.createdAt),
+            updatedAt: DateTransformer.fromDto(customerDetailDto.updatedAt),
         }
     }
 }
 
 export class CustomerCreateTransformer {
-    static todto(customerCreate: CustomerCreate): CustomerCreateDto {
+    static toDto(customerCreate: CustomerCreate): CustomerCreateDto {
         return {
             name: customerCreate.name,
             email: customerCreate.email,
-            phone: PhoneNumberTransformer.todto(customerCreate.phone),
-            address: AddressTransformer.todto(customerCreate.address),
+            phone: PhoneNumberTransformer.toDto(customerCreate.phone),
+            address: AddressTransformer.toDto(customerCreate.address),
         }
     }
 }
 
 export class CustomerUpdateTransformer {
-    static todto(customerUpdate: CustomerUpdate): CustomerUpdateDto {
+    static toDto(customerUpdate: CustomerUpdate): CustomerUpdateDto {
         return {
             uuid: customerUpdate.uuid,
             name: customerUpdate.name,
             email: customerUpdate.email,
-            phone: PhoneNumberTransformer.todto(customerUpdate.phone),
-            address: AddressTransformer.todto(customerUpdate.address),
+            phone: PhoneNumberTransformer.toDto(customerUpdate.phone),
+            address: AddressTransformer.toDto(customerUpdate.address),
         }
     }
     
