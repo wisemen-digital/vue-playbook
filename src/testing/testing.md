@@ -12,19 +12,45 @@ To fully cover our application and ensure code quality, we need to implement var
     - Testing all composables.
     - Verifying that a form validates as expected when the user inputs data.
 
+# Example: Unit Testing with Vitest
+
+Below is a simple example of a **unit test** using [Vitest](https://vitest.dev/). Unlike an end-to-end test (where you automate browser actions and verify UI behavior), a **unit test** focuses on testing a small, isolated piece of functionality—often a single function or module.
+
+---
+
+## 1. Function to Test
+
+Suppose we have a function `greet` that greets a user by name. If the name is empty, it throws an error:
+
 ```typescript
-// Example of a Unit Test for a Login Function
-test('users can successfully log in', async ({ page }) => {
-  // Arrange: Navigate to the login page
-  await page.goto('https://example.com/login');
-  
-  // Act: Fill in the username and password, then submit the form
-  await page.getByTestId(TEST_ID.AUTH.LOGIN_BUTTON).fill('johndoe');
-  await page.getByTestId(TEST_ID.AUTH.PASSWORD_INPUT).fill('password123');
-  await page.getByTestId(TEST_ID.AUTH.SUBMIT_BUTTON).click();
-  
-  // Assert: Verify that the user is redirected to the dashboard
-  await expect(page).toHaveURL('https://example.com/dashboard');
+// greet.ts
+
+export function greet(name: string): string {
+    if (!name) {
+        throw new Error('Name cannot be empty');
+    }
+    return `Hello, ${name}!`;
+}
+```
+
+```typescript
+// example of a unit test for the greet function
+import { describe, it, expect } from 'vitest';
+import { greet } from './greet';
+
+describe('greet', () => {
+    it('returns a greeting message for a valid name', () => {
+        // Arrange & Act
+        const result = greet('Alice');
+
+        // Assert
+        expect(result).toBe('Hello, Alice!');
+    });
+
+    it('throws an error for an empty name', () => {
+        // Arrange & Act & Assert
+        expect(() => greet('')).toThrow('Name cannot be empty');
+    });
 });
 ```
 
@@ -95,14 +121,14 @@ To maintain a clear separation between test types, we place test files in struct
 ### Directory Structure:
 
 ```
-Tests/
-├── Customer/
+tests/
+├── customer/
 │   ├── customerCreate.spec.ts
 │   ├── customerDelete.spec.ts
 │   ├── customerUpdate.spec.ts
 │   ├── customerOverview.spec.ts
 │   └── customerDetail.spec.ts
-├── News/
+├── news/
 │   ├── newsCreate.spec.ts
 │   └── ...
 └── utils/
@@ -113,9 +139,9 @@ Tests/
 
 It's important to follow a consistent naming convention to make it clear what the tests aim to do. The convention for file names is as follows:
 
-- **Unit Tests:** `componentName.test.ts`
-- **Integration Tests:** `componentName.integration.test.ts`
-- **E2E Tests:** `flowName.e2e.test.ts`
+- **Unit Tests:** `componentName.unit.spec.ts`
+- **Integration Tests:** `componentName.integration.spec.ts`
+- **E2E Tests:** `flowName.spec.ts`
 
 This ensures that the test type and content are clear.
 
@@ -125,11 +151,11 @@ Each test should be simple and focused. Here's how we should structure our tests
 
 ### AAA Principle (Arrange, Act, Assert):
 
-1. **Arrange:** Set up the test environment by configuring mock data or components.
+1. **Arrange:** Set up the test environment by configuring mock data, api calls or components.
 2. **Act:** Perform the action you want to test, such as clicking a button or submitting a form.
 3. **Assert:** Check the result and verify that it meets expectations.
 
-### Example of a Unit Test Structure (AAA Principle):
+### Example of a e2e Test Structure (AAA Principle):
 
 ```typescript
 test('users can successfully log in', async ({ page }) => {
@@ -191,14 +217,14 @@ Using `data-test-id` attributes in HTML is the best way to create stable selecto
 
 2. **Descriptive Naming:**
     - Ensure that test IDs describe the function of the element.
-    - **Example:** Use `data-test-id="login-submit-button"` instead of `data-test-id="submit"`.
+    - **Example:** Use `data-test-id="TEST_ID.LOGIN.SUBMIT.BUTTON"` instead of `data-test-id="TEST_ID.SUBMIT"`.
 
-These `data-test-id`s are created and stored in `shared.selectors.ts`, where you can define the test IDs.
+These `data-test-id`s are created and stored in `testId.constant.ts`, where you can define the test IDs.
 
 ### Example:
 
 ```typescript
-// shared.selectors.ts
+// testId.constant.ts
 export const TEST_ID = {
   AUTH: {
     LOGIN_BUTTON: 'auth_login_button',
@@ -242,7 +268,7 @@ export const TEST_ID = {
 
 ```html
 <!-- HTML Element with Test ID -->
-<button data-test-id="auth_login_button">Login</button>
+<button data-test-id="TEST_ID.AUTH.LOGIN_BUTTON">Login</button>
 ```
 
 ```typescript
@@ -267,11 +293,11 @@ Tests should be logically divided to make them easy to maintain and understand. 
 
 ### 1. *Unit Tests per Component:*
 - Each component should have a corresponding test file.
-- **Example:** `Button.test.ts` for the `Button` component.
+- **Example:** `Button.unit.spec.ts` for the `Button` component.
 
 ### 2. *Feature-Specific Integration & E2E Tests:*
 - Tests for specific functionalities like logging in or checking out should be placed in their own folder or file.
-- **Example:** `loginFlow.e2e.test.ts`.
+- **Example:** `loginFlow.spec.ts`.
 
 ### 3. *Structure by Domain:*
 - Group tests by domain or functionality, such as `customer`, `employee`, `dashboard`. This ensures that the test scale remains organized as the project grows.
@@ -348,6 +374,8 @@ test.beforeEach(async ({ page }) => {
   await DataSeederUtil.setup(page, {
     departments: [DEPARTMENT],
   });
+  
+  // Mock other data if needed
 });
 
 test('should create a new customer successfully', async ({ page }) => {
@@ -381,28 +409,17 @@ test.beforeEach(async ({ page }) => {
     CONSULTANT_INDEX_2,
   ]);
   await InterceptorUtil.post(page, `tasks/claims/${CLAIM_TASK_INDEX.uuid}`, CLAIM_TASK);
+
+  // Intercept paginated GET requests for 'tasks/claims*'
+    // The wildcard '*' matches any characters that follow 'tasks/claims'.
+    // This is useful for intercepting URLs like 'tasks/claims?page=2', 'tasks/claims/extra-info', etc.
+    await InterceptorUtil.getPaginated(page, 'tasks/claims*', [CLAIM_TASK_INDEX]);
 });
 
 test('should display customer details correctly', async ({ page }) => {
   // Test logic for displaying customer details
 });
 ```
-
-### When to Use Shared vs. Specific API Calls?
-
-- **Shared API Calls:** Useful when mocking frequently used API calls such as departments, KPIs, and FAQs. This helps minimize code duplication and centralizes common logic.
-- **Specific API Calls:** Used when a test requires unique data that is not reusable by other tests. For example, a test that needs to verify a specific error or edge case.
-
-### Best Practices for API Mocking
-
-1. **Route Interception:**
-    - Use Playwright’s route feature to mock API responses. This ensures that our tests are always consistent, regardless of the external API's status.
-
-2. **Data Builders:**
-    - Use builders like `DepartmentBuilder` and `CustomerBuilder` to create mock data. This makes it easy to generate specific objects with desired properties and promotes reusability.
-
-3. **Parallelization and Isolation:**
-    - By mocking API calls, we can run tests in parallel without relying on a shared backend. This speeds up tests and ensures reliability.
 
 ## 10. Builder Pattern Strategy
 
@@ -462,15 +479,14 @@ export class CustomerDtoBuilder {
   constructor() {}
 
   /**
-   * Finalizes and returns the built CustomerDto object.
+   * Finalizes and returns the built CustomerDto object. this is sufficient! in some cases it may be needed to add the with* methods
    */
   build(): CustomerDto {
     return this.value;
-  }
+  } 
 
   /**
    * Sets the first name of the customer.
-   * @param firstName - The first name to set.
    */
   withFirstName(firstName: string): CustomerDtoBuilder {
     this.value.firstName = firstName;
@@ -478,56 +494,14 @@ export class CustomerDtoBuilder {
   }
 
   /**
-   * Sets the last name of the customer.
-   * @param lastName - The last name to set.
-   */
-  withLastName(lastName: string): CustomerDtoBuilder {
-    this.value.lastName = lastName;
-    return this;
-  }
-
-  /**
-   * Sets the email of the customer.
-   * @param email - The email to set.
-   */
-  withEmail(email: string): CustomerDtoBuilder {
-    this.value.email = email;
-    return this;
-  }
-
-  /**
    * Sets the address of the customer.
-   * @param address - The address to set.
    */
   withAddress(address: AddressDto): CustomerDtoBuilder {
     this.value.address = address;
     return this;
   } // Define only if specifically needed; otherwise, build() is sufficient
-
-  /**
-   * Sets the active status of the customer.
-   * @param isActive - The active status to set.
-   */
-  withIsActive(isActive: boolean): CustomerDtoBuilder {
-    this.value.isActive = isActive;
-    return this;
-  }
 }
 ```
-
-### Important Considerations When Building Builders:
-
-1. **Modularity:**
-    - Use builders within builders to increase code modularity and prevent complex objects from becoming unnecessarily large.
-
-2. **Chaining Methods:**
-    - Builders should always support method chaining, such as `withFirstName()` and `withLastName()`, to keep tests and code readable and maintainable.
-
-3. **Use `build()` at the End:**
-    - Ensure that `build()` is always called to finalize the object. This maintains the clarity of the builder pattern's intention and ensures the object is only created when all necessary properties are set.
-
-4. **Initialize a Default Object:**
-    - In the constructor, set up a default object. This prevents the need to explicitly set everything in every test and allows for quick variations via `with*` methods.
 
 ### Summary of Conventions:
 
@@ -542,8 +516,5 @@ export class CustomerDtoBuilder {
 
 4. **Use of Other Builders:**
     - Call other builders via `new AnotherBuilder().build()` to create logically structured objects.
-
-5. **Ensure Comprehensive Test Coverage:**
-    - Strive for maximum test coverage in your application.
 
 With these conventions and structures, we can ensure that our tests are reliable, easy to maintain, and scalable as the application grows.
