@@ -54,9 +54,8 @@ export default defineConfig({
           { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
       { text: 'Testing', link: '/testing', items: [
-        { text: 'Unit testing', link: '/testing/unit-testing' },
-        { text: 'E2E testing', link: '/testing/e2e-testing' },
-        { text: 'Integration testing', link: '/testing/integration-testing' },
+        { text: 'Testing strategy', link: '/testing/testing' },
+        { text: 'Mock service worker', link: '/testing/mock-service-worker' },
         ]
       },
       {

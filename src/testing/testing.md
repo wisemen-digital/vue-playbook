@@ -16,10 +16,6 @@ To fully cover our application and ensure code quality, we need to implement var
 
 Below is a simple example of a **unit test** using [Vitest](https://vitest.dev/). Unlike an end-to-end test (where you automate browser actions and verify UI behavior), a **unit test** focuses on testing a small, isolated piece of functionality—often a single function or module.
 
----
-
-## 1. Function to Test
-
 Suppose we have a function `greet` that greets a user by name. If the name is empty, it throws an error:
 
 ```typescript
