@@ -18,15 +18,44 @@ The module folder contains multiple folders grouped by "features" eg. **employee
   - composables (shared composables)
     - saving.ts
     - ...
+  - types
+    -
+  - models
+    - customer
+      - index
+        - customerIndexFilter.model.ts
+        - customerIndex.model.ts
+        - customerIndexDto.model.ts
+      - detail
+        - customer.model.ts
+        - customerDto.model.ts
+      - create
+        - customerCreateDto.model.ts
+        - customerCreateForm.model.ts
+      - update
+        - customerUpdateForm.model.ts
+        - customerUpdateDto.model.ts
+      - customerUuid.model.ts
+      - customer.transformer.ts
   - modules
-    - accidents
-        - components
-            - AccidentList.vue
-            - AccidentDetail.vue
-            - ...
+    - customers
+        - features
+            - create
+            - overview
+            - detail
+              - composables
+              - components
+                - CustomerDetailDocumentsTable.vue
+                - CustomerDetailPlanningCalendar.vue
+                - CustomerDetailInfo.vue
+              - views
+                - CustomerDetailView.vue
+                - CustomerDetailDocumentsView.vue
+                - CustomerDetailPlanningView.vue
         - services
-            - accident.service.ts
-            - ...
+            - customer.service.ts
+        - queries
+        - mutations
         - composables
             - ...
         - ...

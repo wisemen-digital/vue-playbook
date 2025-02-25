@@ -36,9 +36,11 @@ Example:
 
 ```vue
 <template>
-  <FormDropdown />
-  <FormCurrencyInput />
-  <FormSelectButton />
+  <div>
+    <FormDropdown />
+    <FormCurrencyInput />
+    <FormSelectButton />
+  </div>
 </template>
 ```
 
@@ -50,9 +52,11 @@ Example:
 
 ```vue
 <template>
-  <AppButton />
-  <AppGrid />
-  <FormDropdown />
-  <FormCurrencyInput />
+  <div>
+    <AppButton />
+    <AppGrid />
+    <FormDropdown />
+    <FormCurrencyInput />
+  </div>
 </template>
 ```

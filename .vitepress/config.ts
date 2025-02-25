@@ -1,33 +1,28 @@
 import { defineConfig } from 'vitepress'
-import { SearchPlugin } from "vitepress-plugin-search";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "The Frontend Bible",
   vite: {
-    plugins: [
-      SearchPlugin({
-        preset: "default",
-        context: "src",
-        optimize: true,
-      }),
-    ]
+    plugins: []
   },
   srcDir: 'src',
   dir: 'src',
   cleanUrls: true,
   lastUpdated: true,
   description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
+  base: '/frontend-bible/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Team', link: '/team' },
     ],
     editLink: {
-      pattern: 'https://github.com/appwise-labs/frontend-bible/blob/main/src/:path'
+      pattern: 'https://github.com/wisemen-digital/frontend-bible/blob/main/src/:path'
     },
     logo: '/bible_logo.png',
     sidebar: [
+      { text: 'Project template', link: '/project-template'},
       { text: 'Tools', link: '/tools'},
       { text: 'Project structure', link: '/project-structure'},
       { text: 'Clean code', link: '/clean-code'},
@@ -50,6 +45,11 @@ export default defineConfig({
           { text: 'Utils', link: '/reusable-code/utils' },
           { text: 'Stores', link: '/reusable-code/stores' },
           { text: 'Services', link: '/reusable-code/services' },
+          { text: 'Queries', link: '/reusable-code/queries' },
+          { text: 'Models', link: '/reusable-code/models' },
+          { text: 'Transformers', link: '/reusable-code/transformers' },
+          { text: 'Pagination', link: '/reusable-code/pagination' },
+          { text: 'Mutations', link: '/reusable-code/mutations' },
           { text: 'Router', link: '/reusable-code/router' },
           { text: 'Authentication', link: '/reusable-code/authentication' },
       ]},
@@ -77,7 +77,7 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/appwise-labs/frontend-bible' }
+      { icon: 'github', link: 'https://github.com/wisemen-digital/frontend-bible' }
     ]
   }
 })

@@ -19,23 +19,24 @@ const props = defineProps<{
 }>();
 ```
 
-## No default values (TODO: discuss this)
+## With default values
 
-When using the typescript constructor, you can't define default values.
-This is a good thing. It forces you to always pass a value to avoid unexpected behaviour.
-
-If you have a prop that has a prop that determines it's styling or functionality.
-Make the user of your component required to pass that prop.
+When using the typescript constructor, you can define default values.
 
 ```typescript
-enum Shape {
-  Circle,
-  Square,
-}
-
-const props = defineProps<{
-  shape: Shape,
-}>();
+const props = withDefaults(defineProps<{
+    age: number,
+    name: string,
+    address: Address,
+}>(), {
+    name: 'John Doe',
+    age: 18,
+    address: {
+        street: 'Main street',
+        number: 123,
+        city: 'New York',
+    },
+});
 ```
 
 ## Boolean props should be prefixed

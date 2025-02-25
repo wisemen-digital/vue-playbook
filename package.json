@@ -1,4 +1,9 @@
 {
+  "packageManager": "pnpm@9.9.0",
+  "type": "module",
+  "version": "0.0.0",
+  "author": "Wisemen",
+  "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
     "docs:build": "vitepress build",
