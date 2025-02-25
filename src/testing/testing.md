@@ -85,8 +85,7 @@ test('form submits data to API and processes response correctly', async ({ page 
 ```typescript
 // Example of an E2E Test for a Complete Checkout Flow
 test('complete checkout flow from adding to cart to payment', async ({ page }) => {
-  // Arrange: Set up necessary data and navigate to the product page
-  await DataSeederUtil.setup(page, { products: [PRODUCT_ITEM] });
+  // Arrange: navigate to the product page
   await page.goto('https://example.com/products');
   
   // Act: Add a product to the cart and proceed to checkout
@@ -306,120 +305,7 @@ Tests should be logically divided to make them easy to maintain and understand. 
 
 In our testing strategy, we frequently use mocked API calls to ensure that our tests are not dependent on real backend services. This allows us to run tests faster, more reliably, and without external influences. There are two main approaches to mocking API calls within our tests: shared API calls reused across multiple tests, and specific API calls unique to a single test. Below is an explanation of how we apply both approaches within our project.
 
-### Shared API Calls
-
-Shared API calls are reusable logic for mocking common API calls. These API calls are located centrally within the `tests/utils/data.util.ts` folder. The idea is to easily reuse API responses shared by many tests.
-
-#### Example of a Shared API Call:
-
-```typescript
-// tests/utils/data.util.ts
-
-import type { Page } from '@playwright/test';
-
-import { ChatUnreadCountDtoBuilder } from '@/models/chat/unread-count/chatUnreadCountDto.builder.ts';
-import type { ChatUnreadCountDto } from '@/models/chat/unread-count/chatUnreadCountDto.model.ts';
-import { TaskCountDtoBuilder } from '@/models/task/count/taskCountDto.builder.ts';
-import type { TasksCountDto } from '@/models/task/count/tasksCountDto.model.ts';
-import { UserDtoBuilder } from '@/models/user/detail/userDto.builder.ts';
-import type { UserDto } from '@/models/user/detail/userDto.model.ts';
-import { InterceptorUtil } from '@@/utils/interceptor.util.ts';
-
-interface BaseData {
-  chatUnreadCount?: ChatUnreadCountDto;
-  taskCount?: TasksCountDto;
-  user?: UserDto;
-}
-
-export class DataSeederUtil {
-  /**
-   * Sets up mock data for the page by intercepting API calls.
-   * @param page - The Playwright page object.
-   * @param data - Optional data to override default mocks.
-   */
-  static async setup(page: Page, data?: BaseData): Promise<void> {
-    const USER = data?.user ?? new UserDtoBuilder().build();
-    const UNREAD_COUNT = data?.chatUnreadCount ?? new ChatUnreadCountDtoBuilder().build();
-    const TASK_COUNTS = data?.taskCount ?? new TaskCountDtoBuilder().build();
-
-    // Mocking the GET /users/:uuid API call
-    await InterceptorUtil.get(page, `users/${USER.uuid}`, USER);
-    
-    // Mocking the GET /chat-threads/unread-count API call
-    await InterceptorUtil.get(page, `chat-threads/unread-count`, UNREAD_COUNT);
-    
-    // Mocking the GET /tasks/count API call
-    await InterceptorUtil.get(page, 'tasks/count', TASK_COUNTS);
-  }
-}
-```
-
-In the above example, `DataSeederUtil` provides an easy way to mock standard data such as departments, FAQs, and KPIs via the `setup()` method. This ensures that we can quickly start tests without manually setting up these mock API calls for each test.
-
-### How to Use Shared API Calls:
-
-You can easily use these shared API calls in your tests via the `DataSeederUtil.setup` method.
-
-#### Example of Using a Shared API Call in a Test:
-
-```typescript
-// tests/customer/customerCreate.spec.ts
-
-import { test } from '@playwright/test';
-import { DataSeederUtil } from '../utils/data.util.ts';
-import { DEPARTMENT } from '../fixtures/department.fixture.ts';
-
-test.beforeEach(async ({ page }) => {
-  // Setup shared mock data for departments
-  await DataSeederUtil.setup(page, {
-    departments: [DEPARTMENT],
-  });
-  
-  // Mock other data if needed
-});
-
-test('should create a new customer successfully', async ({ page }) => {
-  // Test logic for creating a customer
-});
-```
-
-### Specific API Calls
-
-While shared API calls are convenient, there are times when tests need to mock API calls that are unique to that test. In such cases, we can place the mock within the test itself, typically within the `beforeEach` function. This allows setting up exact data required for the test without relying on a real backend.
-
-#### Example of Specific API Calls:
-
-```typescript
-// tests/customer/customerDetail.spec.ts
-
-import { test } from '@playwright/test';
-import { DataSeederUtil } from '../utils/data.util.ts';
-import { CLAIM_TASK_INDEX, CLAIM_TASK } from '../fixtures/task.fixture.ts';
-import { CONSULTANT_INDEX_1, CONSULTANT_INDEX_2 } from '../fixtures/consultant.fixture.ts';
-
-test.beforeEach(async ({ page }) => {
-  // Setup shared mock data
-  await DataSeederUtil.setup(page);
-  
-  // Mocking specific API calls for tasks and consultants
-  await InterceptorUtil.getPaginated(page, 'tasks/claims', [CLAIM_TASK_INDEX]);
-  await InterceptorUtil.get(page, `tasks/claims/${CLAIM_TASK_INDEX.uuid}`, CLAIM_TASK);
-  await InterceptorUtil.getPaginated(page, 'consultants', [
-    CONSULTANT_INDEX_1,
-    CONSULTANT_INDEX_2,
-  ]);
-  await InterceptorUtil.post(page, `tasks/claims/${CLAIM_TASK_INDEX.uuid}`, CLAIM_TASK);
-
-  // Intercept paginated GET requests for 'tasks/claims*'
-    // The wildcard '*' matches any characters that follow 'tasks/claims'.
-    // This is useful for intercepting URLs like 'tasks/claims?page=2', 'tasks/claims/extra-info', etc.
-    await InterceptorUtil.getPaginated(page, 'tasks/claims*', [CLAIM_TASK_INDEX]);
-});
-
-test('should display customer details correctly', async ({ page }) => {
-  // Test logic for displaying customer details
-});
-```
+for more information about mocking API calls in tests, please refer to the [Mock Service Worker](/testing/mock-service-worker.md) documentation.
 
 ## 10. Builder Pattern Strategy
 
@@ -468,7 +354,7 @@ import type { AddressDto } from '@/models/address/addressDto.type.ts';
  */
 export class CustomerDtoBuilder {
   private value: CustomerDto = {
-    uuid: UuidUtil.getRandom<string>(), // Generate a random UUID
+    uuid: UuidUtil.getRandom<CustomerUuid>(), // Generate a random UUID
     firstName: 'John',
     lastName: 'Doe',
     email: 'john.doe@example.com',
@@ -484,15 +370,7 @@ export class CustomerDtoBuilder {
   build(): CustomerDto {
     return this.value;
   } 
-
-  /**
-   * Sets the first name of the customer.
-   */
-  withFirstName(firstName: string): CustomerDtoBuilder {
-    this.value.firstName = firstName;
-    return this;
-  }
-
+  
   /**
    * Sets the address of the customer.
    */
