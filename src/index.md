@@ -3,15 +3,15 @@
 layout: home
 
 hero:
-  name: 'The Frontend Bible'
-  tagline: 'A guide for creating great web applications.'
+  name: 'The Vue Playbook'
+  tagline: 'A guide for creating great web applications with Vue'
   actions:
     - theme: brand
       text: Get Started
       link: /components
     - theme: alt
       text: View on GitHub
-      link: https://github.com/appwise-labs/frontend-bible
+      link: https://github.com/wisemen-digital/vue-playbook
 
 features:
   - icon: 🤝

@@ -34,7 +34,7 @@ class Person {
   }
 }
 
-const personFilter = (persons: Person[], filterType: string): Person[] => {
+function personFilter(persons: Person[], filterType: string): Person[] {
   if(filterType === 'firstName'){
     return persons.filter(person => person.firstName === firstName);
   }
@@ -54,7 +54,7 @@ The problem with personFilter function is that if we want to filter by any other
 Let's solve this problem by allowing the filter to accept any prop name and allow it to directly filter it.
 
 ```Typescript
-const personFilter = (persons: Person[], propName: string): Person[] => {
+function personFilter(persons: Person[], propName: string): Person[] {
   return array.filter(element => element[propName] === value)
 }
 ```
