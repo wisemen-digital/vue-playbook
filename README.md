@@ -1,6 +1,6 @@
 # The Vue Playbook
 
-This playbook is a collection of best practices, guidelines and tips for frontend development with vyue. 
+This playbook is a collection of best practices, guidelines and tips for frontend development with Vue. 
 It is a living document that will be updated as we learn better ways to build great frontend applications.
 
 ## How can I help?
