@@ -70,6 +70,16 @@ export default defineConfig({
           {text: 'oAuth client', link: '/packages/o-auth-client' },
         ],
       },
+      { 
+        text: 'Accessibility', 
+        link: '/accessibility', 
+        items: [
+          { 
+            text: 'Semantic HTML', 
+            link: '/accessibility/semantic-html',
+          },
+        ]
+      },
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/wisemen-digital/vue-playbook' }
