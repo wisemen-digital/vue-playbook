@@ -26,8 +26,8 @@ This documentation will outline the importance of semantic HTML and provide prac
 - `<header>`: Represents introductory content, usually at the top of a document or a section. It often contains a heading, navigation, and logos.
 ```html
 <header>
-	<h1>Website Title</h1>
-	<nav>...</nav>
+  <h1>Website Title</h1>
+  <nav>...</nav>
 </header>
 ```
 
@@ -35,10 +35,10 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-    </ul>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
 </nav>
 ```
 
@@ -46,8 +46,8 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <main>
-    <h2>Welcome to our website!</h2>
-    <p>This is the main content area.</p>
+  <h2>Welcome to our website!</h2>
+  <p>This is the main content area.</p>
 </main>
 ```
 
@@ -55,8 +55,8 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <article>
-    <h3>Blog Post Title</h3>
-    <p>Content of the blog post...</p>
+  <h3>Blog Post Title</h3>
+  <p>Content of the blog post...</p>
 </article>
 ```
 
@@ -64,8 +64,8 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <section>
-    <h2>Our Services</h2>
-    <p>Details about our various services.</p>
+  <h2>Our Services</h2>
+  <p>Details about our various services.</p>
 </section>
 ```
 
@@ -75,7 +75,7 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <footer>
-    <p>&copy; 2025 Our Company. All rights reserved.</p>
+  <p>&copy; 2025 Our Company. All rights reserved.</p>
 </footer>
 ```
 
@@ -102,8 +102,8 @@ This documentation will outline the importance of semantic HTML and provide prac
 
 ```html
 <figure>
-    <img src="image.jpg" alt="Description of image">
-    <figcaption>A beautiful landscape.</figcaption>
+  <img src="image.jpg" alt="Description of image">
+  <figcaption>A beautiful landscape.</figcaption>
 </figure>
 ```
 
