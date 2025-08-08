@@ -10,7 +10,7 @@ The default rule is: **no comments**. Only when doing something really weird and
 
 No commented code. No exception. Git knows everything or just write it again later.
 
-#### Exceptions
+### Exceptions
 
 The one and only exception is when you are writing documentation or creating a library to explain the usage of a function.
 

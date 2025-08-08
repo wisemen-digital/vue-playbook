@@ -4,13 +4,13 @@
 
 Queries are used to manage data requests (read) to the backend.
 
-### Responsibility of a query
+## Responsibility of a query
 
 - Invoke the correct method from a service
 - Handle loading state
 - Handle caching and invalidation
 
-### Examples
+## Examples
 
 ```typescript
 // employeeIndex.query.ts
