@@ -2,27 +2,31 @@
 
 # Utils
 
-Utils are reusable pieces of logic that are not specific to vue and never contain any state. A good example is
-the `dates.util.ts`. Each function is
-exported as a const and does not share state with the other functions.
+Utils are reusable pieces of logic that are not specific to vue and never contain any state. 
+A good example is the `date.util.ts`.
+Each function is pure and exported as a static function on a class and does not share any state with the other functions.
 
 ✅ Good example of a helper function
 
 ```typescript
 import dayjs from "@/helpers/dayjs";
 
-export const hasDate = (date: DateType | string): boolean => date !== "-";
+export class DateUtil {
+    static formatShort(date: DateType | string): string {
+        return dayjs(date).format("DD/MM/YYYY");
+    }
+}
 
-export const formatDate = (date: DateType | string) => {
-  return dayjs(date).format("DD/MM/YYYY");
-};
 ```
 
-✅ Very bad and naught example of a helper function
+❌ Bad example of a helper function
 
 ```typescript
-
-export const saveToDatabase = () => {
-  
+export class DataBaseUtil {
+    private database = new Database(); // This is not a pure function, it shares state with the database instance.
+    
+    static async saveToDatabase(data: any): Promise<void> {
+        database.save(data)
+    }
 }
 ```

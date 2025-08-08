@@ -20,19 +20,20 @@ Example:
 ```vue
 <!--EmployeesView.vue-->
 <script lang="ts">
-const router = useRouter();
-const employeeStore = useEmployeeStore();
+const router = useRouter()
 
-const { employees } = storeToRefs(employeeStore);
+const indexQuery = useEmployeeIndexQuery()
 
-const onButtonClick = (uuid: string): void => {
+function onButtonClick(uuid: string): void {
   router.push('/example');
 }
-
 </script>
 
 <template>
-  <EmployeesTable :employees="employees" @row:click="onEmployeeItemClick" />
+  <EmployeesTable 
+     :employees="indexQuery.data.items" 
+     @row:click="onEmployeeItemClick"
+  />
 </template>
 ```
 

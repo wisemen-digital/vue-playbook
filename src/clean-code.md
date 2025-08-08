@@ -16,7 +16,7 @@ The one and only exception is when you are writing documentation or creating a l
 
 ```typescript
 // Formats the date to dd-mm-yyyy
-const formatDate = (date: Date) => {
+function formatDate(date: Date): string {
   return `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
 }
 ```

@@ -1,16 +1,23 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+_generation
+
 node_modules
-.DS_Store
-.vitepress/dist
-.vitepress/cache
+dist
 *.local
-.eslintcache
+
+**/.vitepress/dist
+**/.vitepress/cache
+
+.turbo
+
 # Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-# VSCode Local History Extension
-.history
+.DS_Store
+*.tgz
+*storybook.log

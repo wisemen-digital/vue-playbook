@@ -1,6 +1,7 @@
-# The Frontend Bible
+# The Vue Playbook
 
-This frontend bible is a collection of best practices, guidelines and tips for frontend development. It is a living document that will be updated as we learn more about frontend development.
+This playbook is a collection of best practices, guidelines and tips for frontend development with Vue. 
+It is a living document that will be updated as we learn better ways to build great frontend applications.
 
 ## How can I help?
 
@@ -16,11 +17,11 @@ This frontend bible is a collection of best practices, guidelines and tips for f
 ### Running the project locally
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ### Linting
 
 The application uses `eslint`. The configuration is in `.eslintrc.js`.
 
-Run `npm run lint` to lint the code. It will automatically fix linting issues.
+Run `pnpm run lint` to lint the code. It will automatically fix linting issues.

@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "The Frontend Bible",
+  title: "The Vue Playbook",
   vite: {
     plugins: []
   },
@@ -10,14 +10,15 @@ export default defineConfig({
   dir: 'src',
   cleanUrls: true,
   lastUpdated: true,
-  description: "The Frontend Bible is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
+  description: "The Vue Playbook is a collection of best practices, design patterns, and libraries for building Vue.js applications.",
+  base: '/vue-playbook/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Team', link: '/team' },
     ],
     editLink: {
-      pattern: 'https://github.com/wisemen-digital/frontend-bible/blob/main/src/:path'
+      pattern: 'https://github.com/wisemen-digital/vue-playbook/blob/main/src/:path'
     },
     logo: '/bible_logo.png',
     sidebar: [
@@ -69,14 +70,19 @@ export default defineConfig({
           {text: 'oAuth client', link: '/packages/o-auth-client' },
         ],
       },
-      {
-        text: 'Meetings', link: '/meetings', items: [
-          {text: 'Meeting 17/04/2023', link: '/meetings/meeting_17_04_2023' },
-        ],
+      { 
+        text: 'Accessibility', 
+        link: '/accessibility', 
+        items: [
+          { 
+            text: 'Semantic HTML', 
+            link: '/accessibility/semantic-html',
+          },
+        ]
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/wisemen-digital/frontend-bible' }
+      { icon: 'github', link: 'https://github.com/wisemen-digital/vue-playbook' }
     ]
   }
 })
