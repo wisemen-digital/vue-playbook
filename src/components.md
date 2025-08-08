@@ -2,7 +2,7 @@
 
 Components are the building blocks of your application. They are the most important part of your application and should be written with care.
 
-### Table of contents
+## Table of contents
 
 - [Naming](components/naming.md)
 - [Structure](components/structure.md)

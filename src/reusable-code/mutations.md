@@ -6,13 +6,13 @@ Mutations are used to manage data requests (create, update, delete) to the backe
 
 We use mutations from the Tanstack library with our own wrapper to clean up the api.
 
-### Responsibility of a mutation
+## Responsibility of a mutation
 
 - Invoke the correct method from a service
 - Handle loading state
 - Invalidate query when the request is successful
 
-### Examples
+## Examples
 
 ```typescript
 // clientCreate.mutation.ts

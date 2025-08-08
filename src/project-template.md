@@ -2,7 +2,7 @@
 
 This templated will help you to create great applications at Wisemen.
 
-### Repository
+## Repository
 
 You can find the repository [on Github](https://github.com/wisemen-digital/frontend-project-template)
 
@@ -23,7 +23,7 @@ To see a demo of the project template, you can visit [vue-project-template.wisem
 - [Authentication](#authentication)
 - [Form validation](#form-validation)
 - [Sentry](#sentry)
-- [PWA](#pwa)
+- [PWA (Progressive Web App)](#pwa-progressive-web-app)
 - [Testing your application](#testing-your-application)
   - [Unit Tests](#unit-tests)
   - [E2E Tests](#e2e-tests)
@@ -39,23 +39,23 @@ To see a demo of the project template, you can visit [vue-project-template.wisem
 
 ## Project setup
 
-#### Fork repo and install dependencies
+### Clone repo and install dependencies
 
-```
+```bash
 pnpm install
 ```
 
-#### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development
 
-```
+```bash
 pnpm dev
 ```
 
-#### Clean the project before pushing changes
+### Clean the project before pushing changes
 
 This command will automatically run the linting, type checking, unit tests, e2e tests, and build the project.
 
-```
+```bash
 pnpm clean
 ```
 
@@ -171,7 +171,7 @@ You only need to update the vitest.config with your project name, description, a
 
 Unit tests are written using [Vitest](https://vitest.dev/). To run the unit tests, run:
 
-```
+```bash
 pnpm test:unit
 ```
 
@@ -179,7 +179,7 @@ pnpm test:unit
 
 E2E tests are written using [Playwright](https://playwright.dev/). To run the e2e tests, run:
 
-```
+```bash
 pnpm test:e2e
 ```
 
@@ -202,6 +202,6 @@ You can run `vite --debug hmr` to log the circular dependency path if a file cha
 
 We can use the [vite-bundle-visualizer](https://www.npmjs.com/package/vite-bundle-visualizer) to check the project bundle.
 
-```
+```bash
 npx vite-bundle-visualizer
 ```

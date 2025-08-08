@@ -1,6 +1,6 @@
 # Libraries
 
-### Package.json
+## Package.json
 
 Your package.json is a magic file where you can add any and everything. It's very easy to abuse this so please follow these rules.
 
@@ -8,7 +8,7 @@ Your package.json is a magic file where you can add any and everything. It's ver
 2. Update them regularly. At least once per month.
 3. Fixed versions. No ~ or ^ allowed.
 
-### Wrapping
+## Wrapping
 
 When using a library for components, validation, etc. It's always really smart to create a wrapper around it. This will:
 

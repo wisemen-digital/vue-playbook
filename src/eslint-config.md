@@ -6,13 +6,13 @@ Every project uses the same ESlint config. This is to ensure that all projects a
 
 ## Installation
 
-#### 1. Install the package
+### 1. Install the package
 
-```
+```bash
 `npm i -D @appwise/eslint-config-vue`
 ```
 
-#### 2. Add the following to your `.eslintrc.json`:
+### 2. Add the following to your `.eslintrc.json`:
 
 If you don't have one yet, you may create one in the root of your project.
 
@@ -22,7 +22,7 @@ If you don't have one yet, you may create one in the root of your project.
 }
 ```
 
-#### 3. Add a script to `package.json`
+### 3. Add a script to `package.json`
 
 ```json
 {
@@ -32,7 +32,7 @@ If you don't have one yet, you may create one in the root of your project.
 }
 ```
 
-#### 4. Profit
+### 4. Profit
 
 Enjoy the awesome code style!
 
