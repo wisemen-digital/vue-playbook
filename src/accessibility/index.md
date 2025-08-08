@@ -5,3 +5,4 @@ Building accessible applications ensures that everyone, including people with di
 ## Table of contents
 
 - [Semantic HTML](/accessibility/semantic-html.md)
+- [Visual Elements](/accessibility/visual-elements.md)

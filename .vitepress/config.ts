@@ -78,6 +78,10 @@ export default defineConfig({
             text: 'Semantic HTML', 
             link: '/accessibility/semantic-html',
           },
+          { 
+            text: 'Visual elements', 
+            link: '/accessibility/visual-elements',
+          },
         ]
       },
     ],
