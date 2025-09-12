@@ -57,7 +57,7 @@ Accessible typography isn't just good design—it’s a legal and ethical requir
 - Test at **400% zoom** and with **custom text spacing overrides**.
 - Validate using tools like **WebAIM Contrast Checker**.
 
-## **Resources for Further Learning**
+## Resources for Further Learning
 
 - [WebAIM: Fonts and Text](https://webaim.org/techniques/fonts/#resizing)
 - [W3C: Text Spacing](https://www.w3.org/WAI/WCAG21/quickref/#text-spacing)
