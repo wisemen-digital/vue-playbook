@@ -6,3 +6,4 @@ Building accessible applications ensures that everyone, including people with di
 
 - [Semantic HTML](/accessibility/semantic-html.md)
 - [Visual Elements](/accessibility/visual-elements.md)
+- [Typography](/accessibility/typography.md)

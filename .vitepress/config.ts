@@ -82,6 +82,10 @@ export default defineConfig({
             text: 'Visual elements', 
             link: '/accessibility/visual-elements',
           },
+          { 
+            text: 'Typography', 
+            link: '/accessibility/typography',
+          },
         ]
       },
     ],
