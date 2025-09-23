@@ -9,3 +9,4 @@ Building accessible applications ensures that everyone, including people with di
 - [Typography](/accessibility/typography.md)
 - [Images & icons](/accessibility/images-and-icons.md)
 - [Keyboard Navigation & Focus Management](/accessibility/keyboard-navigation-and-focus-management.md)
+- [ARIA](/accessibility/aria.md)

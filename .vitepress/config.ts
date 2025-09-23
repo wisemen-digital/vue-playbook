@@ -94,6 +94,10 @@ export default defineConfig({
             text: 'Keyboard Navigation & Focus Management', 
             link: '/accessibility/keyboard-navigation-and-focus-management',
           },
+          { 
+            text: 'ARIA', 
+            link: '/accessibility/aria',
+          },
         ]
       },
     ],
