@@ -86,6 +86,10 @@ export default defineConfig({
             text: 'Typography', 
             link: '/accessibility/typography',
           },
+          { 
+            text: 'Images & icons', 
+            link: '/accessibility/images-and-icons',
+          },
         ]
       },
     ],
