@@ -90,6 +90,10 @@ export default defineConfig({
             text: 'Images & icons', 
             link: '/accessibility/images-and-icons',
           },
+          { 
+            text: 'Keyboard Navigation & Focus Management', 
+            link: '/accessibility/keyboard-navigation-and-focus-management',
+          },
         ]
       },
     ],
