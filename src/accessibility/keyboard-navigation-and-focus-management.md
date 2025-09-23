@@ -121,7 +121,7 @@ Ensuring that all interactive elements on your website are accessible via keyboa
 - [Yale University: Focus & Keyboard Operability](https://usability.yale.edu/web-accessibility/articles/focus-keyboard-operability)
 - [Cloudscape Design System: Focus Management Principles](https://cloudscape.design/foundation/core-principles/accessibility/focus-management-principles/)
 - [MDN Web Docs: Keyboard Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Keyboard)
-- [Accessibly](https://accessiblyapp.com/web-accessibility/keyboard-navigation/?utm_source=chatgpt.com)
+- [Accessibly](https://accessiblyapp.com/web-accessibility/keyboard-navigation/)
 
 ---
 
