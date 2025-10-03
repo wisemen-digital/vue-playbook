@@ -31,7 +31,7 @@ Creating accessible color palettes isn't just a design preference—it ensures t
 
 ## Best Practices for Designers
 
-As front-end developers, we're not the only ones responsible for ensuring proper color contrast—designers should have already applied most of the accessibility guidelines. However, we should still be able to review and provide feedback
+As front-end developers, we're not the only ones responsible for ensuring proper color contrast—designers should have already applied most of the accessibility guidelines. However, we should still be able to review and provide feedback on color and contrast choices.
 
 ### Light vs Dark Text
 
