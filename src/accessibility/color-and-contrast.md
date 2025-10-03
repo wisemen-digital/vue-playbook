@@ -90,8 +90,8 @@ Turning up contrast isn’t just about compliance—it restores the web’s univ
 
 ### Recommended Resources
 
-- **WCAG 2.1 / 2.2 Contrast Criteria (1.4.3, 1.4.11, 1.4.6)** – W3C official specs [boia.org+3webaim.org+3medium.com+3](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com)[wired.com+3accessibleweb.com+3softwaretestingmaterial.com+3](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com)[en.wikipedia.org](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines?utm_source=chatgpt.com)[accessibilitychecker.org+5w3.org+5accessibleweb.com+5](https://www.w3.org/TR/WCAG21/?utm_source=chatgpt.com)
-- **WebAIM Contrast Checker** – practical tool with insights [my.willamette.edu+4webaim.org+4webaim.org+4](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com)
-- **Lea Verou’s Contrast Ratio Tool** – helpful for semi-transparent colors https://www.siegemedia.com/contrast-ratio
-- **Accessible Web Helper** – browser extension for real-time testing [medium.com+13accessibleweb.com+13accessibilitychecker.org+13](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com)
-- **Color-Blindness Simulation Tips** – to enhance design inclusivity [en.wikipedia.org+1softwaretestingmaterial.com+1](https://en.wikipedia.org/wiki/Color_blindness?utm_source=chatgpt.com)
+- **WCAG 2.1 / 2.2 Contrast Criteria (1.4.3, 1.4.11, 1.4.6)** – W3C official specs: [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com), [Accessible Web Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com), [Wikipedia: Web Content Accessibility Guidelines](https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines?utm_source=chatgpt.com), [W3C WCAG 2.1 Specification](https://www.w3.org/TR/WCAG21/?utm_source=chatgpt.com)
+- **WebAIM Contrast Checker** – practical tool with insights: [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com)
+- **Lea Verou’s Contrast Ratio Tool** – helpful for semi-transparent colors: [Contrast Ratio Tool](https://www.siegemedia.com/contrast-ratio)
+- **Accessible Web Helper** – browser extension for real-time testing: [Accessible Web Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com)
+- **Color-Blindness Simulation Tips** – to enhance design inclusivity: [Wikipedia: Color blindness](https://en.wikipedia.org/wiki/Color_blindness?utm_source=chatgpt.com)
