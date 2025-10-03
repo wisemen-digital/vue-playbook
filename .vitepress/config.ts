@@ -98,6 +98,10 @@ export default defineConfig({
             text: 'ARIA', 
             link: '/accessibility/aria',
           },
+          { 
+            text: 'Color & Contrast', 
+            link: '/accessibility/color-and-contrast',
+          },
         ]
       },
     ],
