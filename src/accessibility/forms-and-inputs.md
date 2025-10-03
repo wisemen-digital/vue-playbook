@@ -48,7 +48,7 @@
     <p id="email-error">Email is required</p>
     ```
     
-    Don't use **only red borders or tooltips** to show validation—always add clear text.
+- Don't use **only red borders or tooltips** to show validation—always add clear text.
     
 
 ## Focus Indicators & Keyboard Navigation
