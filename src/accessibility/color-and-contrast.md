@@ -53,10 +53,10 @@ Don’t rely on color alone—add visual patterns, shapes, or text labels to hel
 
 ## Tools You Should Use
 
-- **WebAIM Contrast Checker** – widely used for measuring ratios [audioeye.com+4webaim.org+4webaim.org+4](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com).
-- **Accessible Web Color Contrast Checker** – tests AA/AAA compliance and simulates UI ratios [softwaretestingmaterial.com+15accessibleweb.com+15accessibilitychecker.org+15](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com).
-- **Lea Verou’s Contrast Ratio Tool** – handles semi-transparent overlays and CSS formats https://www.siegemedia.com/contrast-ratio.
-- **Accessible Web Helper (Chrome extension)** – live-test your pages and inspect ratios [accessibleweb.com](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com).
+- **WebAIM Contrast Checker** – widely used for measuring ratios [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/?utm_source=chatgpt.com).
+- **Accessible Web Color Contrast Checker** – tests AA/AAA compliance and simulates UI ratios [Accessible Web Color Contrast Checker](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com).
+- **Lea Verou’s Contrast Ratio Tool** – handles semi-transparent overlays and CSS formats [Contrast Ratio Tool](https://www.siegemedia.com/contrast-ratio).
+- **Accessible Web Helper (Chrome extension)** – live-test your pages and inspect ratios [Accessible Web Helper](https://accessibleweb.com/color-contrast-checker/?utm_source=chatgpt.com).
 
 ## Testing Strategies
 
