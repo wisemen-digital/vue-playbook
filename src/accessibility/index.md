@@ -11,3 +11,4 @@ Building accessible applications ensures that everyone, including people with di
 - [Keyboard Navigation & Focus Management](/accessibility/keyboard-navigation-and-focus-management.md)
 - [ARIA](/accessibility/aria.md)
 - [Color & contrast](/accessibility/color-and-contrast)
+- [Forms & inputs](/accessibility/forms-and-inputs)

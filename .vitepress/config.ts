@@ -102,6 +102,10 @@ export default defineConfig({
             text: 'Color & Contrast', 
             link: '/accessibility/color-and-contrast',
           },
+          { 
+            text: 'Forms & inputs', 
+            link: '/accessibility/forms-and-inputs',
+          },
         ]
       },
     ],
