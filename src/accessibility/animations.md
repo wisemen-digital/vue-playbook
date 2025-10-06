@@ -1,4 +1,4 @@
-# Animate, explosion and motion
+# Animation, Motion and Effects
 
 ## **1. Respect User Preferences with `prefers-reduced-motion`**
 
