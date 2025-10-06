@@ -43,7 +43,7 @@ Use the right tags for built‑in accessibility, then layer on Tailwind classes 
 
 Ensure buttons and interactive elements have ample touch area. [Touch target size recommendation](https://support.google.com/accessibility/android/answer/7101858?hl=en): **Aim for a minimum touch target of 44–48 px** in your Tailwind styles
 
-Make sure of your rings/outlines styling.
+Ensure your focus rings and outlines have sufficient contrast and are clearly visible on all interactive elements. This helps keyboard and screen reader users navigate your site effectively.
 
 ## Testing mobile accessibility
 
