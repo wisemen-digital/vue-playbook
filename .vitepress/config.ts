@@ -110,6 +110,10 @@ export default defineConfig({
             text: 'Navigation', 
             link: '/accessibility/navigation',
           },
+          { 
+            text: 'Animations', 
+            link: '/accessibility/animations',
+          },
         ]
       },
     ],
