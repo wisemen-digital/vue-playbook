@@ -14,3 +14,4 @@ Building accessible applications ensures that everyone, including people with di
 - [Forms & inputs](/accessibility/forms-and-inputs.md)
 - [Navigation](/accessibility/navigation.md)
 - [Animations](/accessibility/animations.md)
+- [Responsive & mobile accessibility](/accessibility/responsive-and-mobile.md)

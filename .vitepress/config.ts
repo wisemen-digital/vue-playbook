@@ -114,6 +114,10 @@ export default defineConfig({
             text: 'Animations', 
             link: '/accessibility/animations',
           },
+          { 
+            text: 'Responsive & mobile accessibility', 
+            link: '/accessibility/responsive-and-mobile',
+          },
         ]
       },
     ],
