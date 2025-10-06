@@ -73,7 +73,7 @@ Nothing beats real-world testing:
 - Use both **iOS and Android** phones and tablets
 - Test on different browsers: Chrome, Safari, Firefox, Edge
 
-## Ressources for further learning
+## Resources for further learning
 
 [Tailwind responsive design](https://tailwindcss.com/docs/responsive-design)
 
