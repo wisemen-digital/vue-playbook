@@ -12,3 +12,4 @@ Building accessible applications ensures that everyone, including people with di
 - [ARIA](/accessibility/aria.md)
 - [Color & contrast](/accessibility/color-and-contrast)
 - [Forms & inputs](/accessibility/forms-and-inputs)
+- [Navigation](/accessibility/navigation)

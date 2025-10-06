@@ -106,6 +106,10 @@ export default defineConfig({
             text: 'Forms & inputs', 
             link: '/accessibility/forms-and-inputs',
           },
+          { 
+            text: 'Navigation', 
+            link: '/accessibility/navigation',
+          },
         ]
       },
     ],
