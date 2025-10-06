@@ -171,7 +171,7 @@ Dropdown menus present unique accessibility challenges.
 ## Resources for Further Learning
 
 - **W3C WAI-ARIA Authoring Practices Guide (APG) - Navigation Menus:** Essential for complex menu patterns.
-    - [https://www.w3.org/WAI/ARIA/apg/patterns/menus/](https://www.google.com/search?q=https://www.w3.org/WAI/ARIA/apg/patterns/menus/)
+    - [https://www.w3.org/WAI/ARIA/apg/patterns/menus/](https://www.w3.org/WAI/ARIA/apg/patterns/menus/)
 - **MDN Web Docs - HTML `<nav>` element:**
     - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
 - **WebAIM - Skip Navigation:**
