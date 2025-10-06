@@ -110,7 +110,7 @@ This documentation outlines best practices for creating accessible navigation.
 	<nav>...</nav>
 
 	<main id="main-content">
-		</main>
+	</main>
 
 	<footer>...</footer>
 </body>
