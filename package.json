@@ -1,5 +1,5 @@
 {
-  "packageManager": "pnpm@9.9.0",
+  "packageManager": "pnpm@10.18.0",
   "type": "module",
   "version": "0.0.0",
   "author": "Wisemen",
@@ -11,13 +11,18 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.md,.vue . --fix"
   },
   "devDependencies": {
-    "@eslint/js": "9.32.0",
-    "@eslint/markdown": "7.1.0",
-    "eslint": "9.32.0",
-    "globals": "16.3.0",
-    "jiti": "2.5.1",
+    "@eslint/js": "9.37.0",
+    "@eslint/markdown": "7.3.0",
+    "eslint": "9.37.0",
+    "globals": "16.4.0",
+    "jiti": "2.6.1",
     "markdown-it": "14.1.0",
     "vitepress": "1.6.4",
-    "vue-tsc": "3.0.5"
+    "vue-tsc": "3.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.25.10"
+    }
   }
 }
