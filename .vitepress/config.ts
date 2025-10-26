@@ -90,6 +90,34 @@ export default defineConfig({
             text: 'Images & icons', 
             link: '/accessibility/images-and-icons',
           },
+          { 
+            text: 'Keyboard Navigation & Focus Management', 
+            link: '/accessibility/keyboard-navigation-and-focus-management',
+          },
+          { 
+            text: 'ARIA', 
+            link: '/accessibility/aria',
+          },
+          { 
+            text: 'Color & Contrast', 
+            link: '/accessibility/color-and-contrast',
+          },
+          { 
+            text: 'Forms & inputs', 
+            link: '/accessibility/forms-and-inputs',
+          },
+          { 
+            text: 'Navigation', 
+            link: '/accessibility/navigation',
+          },
+          { 
+            text: 'Animations', 
+            link: '/accessibility/animations',
+          },
+          { 
+            text: 'Responsive & mobile accessibility', 
+            link: '/accessibility/responsive-and-mobile',
+          },
         ]
       },
     ],
