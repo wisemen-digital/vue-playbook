@@ -37,6 +37,7 @@ export default defineConfig({
           { text: 'Props', link: '/components/props' },
           { text: 'Emits', link: '/components/emits' },
           { text: 'Slots', link: '/components/slots' },
+          { text: 'Portals', link: '/components/portals' },
           { text: 'Accessibility', link: '/components/accessibility' },
         ]
       },
