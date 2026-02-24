@@ -4,11 +4,11 @@ This templated will help you to create great applications at Wisemen.
 
 ## Repository
 
-You can find the repository [on Github](https://github.com/wisemen-digital/frontend-project-template)
+You can find the repository [on Github](https://github.com/wisemen-digital/wisemen-project-template.git)
 
 ### Demo
 
-To see a demo of the project template, you can visit [vue-project-template.wisemen.digital](https://vue-project-template.wisemen.digital/)
+To see a demo of the project template, you can visit [wisemen.project.template](https://github.com/wisemen-digital/wisemen-project-template.git)
 
 ### Table of contents
 
@@ -63,7 +63,13 @@ pnpm clean
 
 The project template uses the [Wisemen ESLint configuration](https://github.com/wisemen-digital/eslint-config-vue) for automatic code formatting and linting.
 
-TODO add our preferences and examples
+ **Important ESLint Rules:**
+
+- **Single quotes**: We use single quotes for strings.
+- **no-console**: We don't allow `console.log` statements in our code.
+- **no-semicolons**: We do not use semicolons at the end of lines.
+- **no-trailing-commas**: We do not use trailing commas.
+- **line-length**: we don't make the line overflow 120 word.
 
 ## Structure
 
@@ -81,21 +87,24 @@ Each module contains multiple features which group together related functionalit
 
 ## Components
 
-The project template uses the Wisemen component library. TODO @robbe
+The project template uses the **Wisemen component library**.
 
-> TODO @robbe add link to component docs and some explanation maybe?
+You can take a look at it here:  
+👉 [Wisemen Core Components (GitHub)](https://github.com/wisemen-digital/wisemen-core/tree/main/packages/components-next)
 
 ## Authentication
 
-The project template uses the Wisemen authentication library. TODO @wouter
+The project template uses the Wisemen authentication library. 
 
-> TODO @wouter add link to auth docs and env variables config explanation
+You can take a look at it here:  
+👉 [Wisemen Core auth (GitHub)](https://github.com/wisemen-digital/wisemen-core/tree/main/packages/auth)
 
 ## Form validation
 
 The project template uses the Formango validation library.
 
-> TODO @robbe add link to formango and zod docs and maybe some explanation?
+You can take a look at it here:  
+👉 [Wisemen Core Formango (GitHub)](https://github.com/wisemen-digital/wisemen-core/tree/main/packages/formango)
 
 ## Sentry
 
