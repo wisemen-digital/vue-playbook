@@ -55,8 +55,24 @@ export default defineConfig({
       ]},
       { text: 'Testing', link: '/testing', items: [
         { text: 'Unit testing', link: '/testing/unit-testing' },
-        { text: 'E2E testing', link: '/testing/e2e-testing' },
+        { text: 'E2E testing', link: '/e2e-testing' },
         { text: 'Integration testing', link: '/testing/integration-testing' },
+        ]
+      },
+      { text: 'E2E Testing', link: '/e2e-testing', items: [
+          { text: 'Getting Started', link: '/e2e-testing/getting-started' },
+          { text: 'Architecture', link: '/e2e-testing/architecture' },
+          { text: 'Configuration', link: '/e2e-testing/configuration' },
+          { text: 'Writing Tests', link: '/e2e-testing/writing-tests' },
+          { text: 'Fixtures & Setup', link: '/e2e-testing/fixtures-and-setup' },
+          { text: 'API Mocking', link: '/e2e-testing/api-mocking' },
+          { text: 'Test Utilities', link: '/e2e-testing/test-utilities' },
+          { text: 'Test Data Builders', link: '/e2e-testing/test-data-builders' },
+          { text: 'Accessibility Testing', link: '/e2e-testing/accessibility-testing' },
+          { text: 'Common Pitfalls', link: '/e2e-testing/common-pitfalls' },
+          { text: 'Best Practices', link: '/e2e-testing/best-practices' },
+          { text: 'Debugging', link: '/e2e-testing/debugging' },
+          { text: 'CI & Coverage', link: '/e2e-testing/ci-and-coverage' },
         ]
       },
       {
