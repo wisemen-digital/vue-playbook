@@ -1,14 +1,8 @@
 # Wisemen Vue Project Template
-
 This templated will help you to create great applications at Wisemen.
-
 ## Repository
 
-You can find the repository [on Github](https://github.com/wisemen-digital/wisemen-project-template.git)
-
-### Demo
-
-To see a demo of the project template, you can visit [wisemen.project.template](https://github.com/wisemen-digital/wisemen-project-template.git)
+You can find the repository [on GitHub](https://github.com/wisemen-digital/wisemen-project-template.git)
 
 ### Table of contents
 
@@ -63,13 +57,12 @@ pnpm clean
 
 The project template uses the [Wisemen ESLint configuration](https://github.com/wisemen-digital/eslint-config-vue) for automatic code formatting and linting.
 
- **Important ESLint Rules:**
-
-- **Single quotes**: We use single quotes for strings.
-- **no-console**: We don't allow `console.log` statements in our code.
-- **no-semicolons**: We do not use semicolons at the end of lines.
-- **no-trailing-commas**: We do not use trailing commas.
-- **line-length**: we don't make the line overflow 120 word.
+ **Code style conventions:**
+- **Single quotes**: use single quotes for strings.
+- **No console logs in committed code**: avoid using `console.log` statements.
+- **No semicolons**: do not use semicolons at the end of lines.
+- **No trailing commas**: do not use trailing commas.
+- **Line length**: keep lines under 120 characters.
 
 ## Structure
 

@@ -89,7 +89,7 @@ That means that if you want to extend a module's behavior, you won't need to mod
 
 ### Example
 
-```Typescript
+```typescript 
 class Person {
   constructor(firstName, lastName, hobby, education, workplace, position) {
     this.firstName = firstName;
@@ -120,7 +120,7 @@ The problem with personFilter function is that if we want to filter by any other
 
 Let's solve this problem by allowing the filter to accept any prop name and allow it to directly filter it.
 
-```Typescript
+```typescript 
 function personFilter(persons: Person[], propName: string): Person[] {
   return array.filter(element => element[propName] === value)
 }
@@ -136,7 +136,7 @@ Now we can filter by any property we want without changing the code inside of th
 
 ❌ Bad: A subclass that breaks the behavior of the parent class.
 
-```Typescript
+```typescript 
 class Bird {
   fly(): string {
     return 'Flying';
@@ -156,7 +156,7 @@ function makeBirdFly(bird: Bird): string {
 
 ✅ Good: Restructure so that subclasses don't violate parent behavior.
 
-```Typescript
+```typescript 
 class Bird {
   move(): string {
     return 'Moving';
@@ -190,7 +190,7 @@ Now `Penguin` can be substituted anywhere a `Bird` is expected without breaking 
 
 ❌ Bad: A single large interface forces classes to implement methods they don't need.
 
-```Typescript
+```typescript 
 interface Worker {
   work(): void;
   eat(): void;
@@ -206,7 +206,7 @@ class  implements Worker {
 
 ✅ Good: Split into smaller, focused interfaces.
 
-```Typescript
+```typescript 
 interface Workable {
   work(): void;
 }
@@ -248,7 +248,7 @@ Second, these lower-level concerns and components should be loosely coupled and 
 
 ❌ Bad: A high-level module directly depends on a low-level module.
 
-```Typescript
+```typescript 
 class MySQLDatabase {
   save(data: string): void {
     // saves to MySQL
